@@ -16,16 +16,17 @@ ul li{
     width: 200px;
     height: 40px;
     background-color: black;
-    opacity: .8;
+    opacity:.6;
     line-height: 40px;
     text-align: center;
+
 
 }
 ul li a {
     text-decoration: none;
     color: white;
     display: block;
-
+    transition: all .5s ease-in;
 }
 
 ul li a:hover{
@@ -33,10 +34,11 @@ ul li a:hover{
 
 }
 ul li ul li{
-    display: none;
+    opacity: 0;
+    transition: all .5s ease-in;
 }
 
 ul li:hover ul li{
-    display: block;
+    opacity: 1;
 
 }
