@@ -25,9 +25,9 @@ ul li{
     width: 200px;
     height: 40px;
     background:transparent;
-
     line-height: 40px;
     text-align: center;
+    display: inline-block;
 
 
 
@@ -39,18 +39,25 @@ ul li a {
     display: block;
     color: white;
     font-weight: bolder;
-    transition: all .2s ease-in;
     font-size: larger;
     text-decoration: wavy transparent;
 }
 
-ul li a:hover{
-    text-decoration: underline solid rgb(147,62,197);
 
 
+
+ul li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .3s;
+    background:rgb(147,62,197);
 }
-
-
+ul li:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
 
 #formMain{
     width: 260px;
