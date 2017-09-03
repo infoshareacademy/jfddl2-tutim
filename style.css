@@ -1,13 +1,22 @@
 body{
-    background: url("fit.jpg") no-repeat;
-    background: cover;
+    margin: 0 auto;
+    padding: 0;
     color: white;
 }
-
+header{
+    width:auto;
+    height:700px;
+    background: url('images/głowny.jpeg');
+}
 ul{
     margin: 0px;
     padding: 0px;
     list-style: none;
+    position: absolute;
+    top: 0;
+    right:0;
+    margin-top: 20px;
+    margin-right: 20px;
 
 }
 
@@ -15,30 +24,70 @@ ul li{
     float: left;
     width: 200px;
     height: 40px;
-    background-color: black;
-    opacity:.6;
+    background:transparent;
+
     line-height: 40px;
     text-align: center;
+
 
 
 }
 ul li a {
     text-decoration: none;
+    text-transform: lowercase;
     color: white;
     display: block;
-    transition: all .5s ease-in;
+    color: white;
+    font-weight: bolder;
+    transition: all .2s ease-in;
+    font-size: larger;
+    text-decoration: wavy transparent;
 }
 
 ul li a:hover{
-    background-color: green;
+    text-decoration: underline solid rgb(147,62,197);
+
 
 }
-ul li ul li{
-    opacity: 0;
-    transition: all .5s ease-in;
+
+
+
+#formMain{
+    width: 260px;
+    margin: 0 auto;
+
+    background: transparent;
+    border: 5px solid rgb(147,62,197);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+#formMain label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #555555;
+    color: white;
 }
 
-ul li:hover ul li{
-    opacity: 1;
-
+#formMain textarea,
+#formMain input {
+    padding: 5px;
+    border-radius: 3px;
+    border: 2px solid rgb(147,62,197);
+    margin-bottom: 25px;
+    width: 245px;
+    background: transparent;
+    color: rgb(173,197,62);
+    font-size: 1.1em;
 }
+
+#formularz input#submit {
+    width: 255px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
