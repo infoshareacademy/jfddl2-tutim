@@ -1,0 +1,118 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    color: white;
+    width: 1400px;
+}
+header{
+    width:auto;
+    height:700px;
+    background: url('images/głowny.jpeg') no-repeat;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    right:0;
+    margin-top: 20px;
+    margin-right: 250px;
+
+}
+
+ul li{
+    float: left;
+    width: 200px;
+    height: 40px;
+    background:transparent;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+
+
+
+}
+ul li a {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: white;
+    display: block;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4em;
+    text-decoration: wavy transparent;
+}
+
+ul li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .3s;
+    background:rgb(147,62,197);
+}
+ul li:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+#formMain{
+    width: 260px;
+    margin: 0 auto;
+
+    background: transparent;
+    border: 5px solid rgb(147,62,197);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+#formMain label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #555555;
+    color: white;
+}
+
+#formMain textarea,
+#formMain input {
+    padding: 5px;
+    border-radius: 3px;
+    border: 2px solid rgb(147,62,197);
+    margin-bottom: 25px;
+    width: 245px;
+    background: transparent;
+    color: rgb(173,197,62);
+    font-size: 1.1em;
+}
+
+#formularz input#submit {
+    width: 255px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+.headerText h2 {
+    color:rgb(173,197,62);
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    font-size: 2.6em;
+    font-weight: solid;
+}
+
+.headerText p{
+    width: 400px;
+    font-size: 1.4em;
+    font-weight: bold;
+    border: solid rgb(147,62,197);
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 5px;
+
+
+}
