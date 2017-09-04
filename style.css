@@ -2,20 +2,21 @@ body{
     margin: 0 auto;
     padding: 0;
     color: white;
-    width: 1400px;
+    max-width: 1440px;
+    height:10000px;
 }
 header{
     width:auto;
-    height:700px;
-    background: url('images/głowny.jpeg') no-repeat;
+    height:715px;
+    background: url('images/fitstyle_01.jpg') no-repeat;
 }
 ul{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     list-style: none;
-    position: absolute;
-    top: 0;
-    right:0;
+    position: fixed;
+    top: 20px;
+    right:40px;
     margin-top: 20px;
     margin-right: 250px;
 
@@ -40,7 +41,7 @@ ul li a {
     display: block;
     color: white;
     font-weight: bolder;
-    font-size: 1.4em;
+    font-size: 1.6em;
     text-decoration: wavy transparent;
 }
 
@@ -48,25 +49,28 @@ ul li::after{
     content: '';
     display: block;
     width: 0;
-    height: 2px;
-    transition: width .3s;
+    height: 4px;
+    transition: width .4s;
     background:rgb(147,62,197);
 }
 ul li:hover::after{
     width: 100%;
-    transition: width .3s;
+    transition: width .4s;
 }
 
 #formMain{
     width: 260px;
     margin: 0 auto;
-
-    background: transparent;
-    border: 5px solid rgb(147,62,197);
-    border-radius: 10px;
+    border: 5px solid gray;
+    border-radius: 1px;
     padding: 20px;
-    margin-top: 20px;
-    margin-right: 50px;
+    margin-right: 90px;
+    margin-top: -10px;
+    display: none;
+    position: absolute;
+    top: 300px;
+    right: 150px;
+    background: #001f3f;
 }
 #formMain label{
     display: block;
@@ -76,6 +80,7 @@ ul li:hover::after{
     font-size: 14px;
     color: #555555;
     color: white;
+    border: #001f3f;
 }
 
 #formMain textarea,
@@ -85,8 +90,8 @@ ul li:hover::after{
     border: 2px solid rgb(147,62,197);
     margin-bottom: 25px;
     width: 245px;
-    background: transparent;
-    color: rgb(173,197,62);
+    background: ghostwhite;
+    color: black;
     font-size: 1.1em;
 }
 
@@ -106,13 +111,41 @@ ul li:hover::after{
 }
 
 .headerText p{
-    width: 400px;
+    position: absolute;
+    width: 300px;
     font-size: 1.4em;
     font-weight: bold;
-    border: solid rgb(147,62,197);
+    border: solid #001f3f;
     margin-left: 20px;
     border-radius: 5px;
-    padding: 5px;
+    padding: 15px;
+    top: 275px;
+    left: 1275px;
 
 
 }
+
+.btn{
+    position: absolute;
+    right: 400px;
+    top: 600px;
+    padding: 7px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background: transparent;
+    border: solid #001f3f;
+    color: white;
+    font-weight: bold;
+}
+ .btn:hover {
+     curosor: pointer;
+ }
+
+
+ .pic img{
+     position: fixed;
+     width: 15%;
+     left: 300px;
+     top: 5px;
+
+ }

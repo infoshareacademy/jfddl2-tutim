@@ -5,10 +5,10 @@
     <title>Hello World!</title>
 
     <link rel="stylesheet" href="style.css"/>
-</head>
 <body>
+
 <header>
-    <img src="images/fitstyle-logomoje.png">
+    <div class="pic"><img src="images/fitstyle2-logo.png"></div>
     <nav class="mainNav">
         <ul>
             <li><a href="#" title="Opcje produktu">Strona Główna</a></li>
@@ -17,6 +17,9 @@
             <li><a href="#">Kontakt</a></li>
         </ul>
     </nav>
+
+    <button onclick="popupOpen()" class="btn">Wpisz się</button>
+
     <div id="formMain">
         <form>
             <label>Imię i nazwisko</label>
@@ -32,11 +35,10 @@
         </form>
     </div>
     <div class="arrow_box">
-
     </div>
     <div class="headerText">
         <h2>Zapisz się na Premierę <br />    już teraz!</h2>
-            <p>Dołącz do elitarnej grupy osób, która będzie mogła,
+            <p class="text">Dołącz do elitarnej grupy osób, która będzie mogła,
                 jako pierwsi w Polsce, przetestować  nasz nowy produkt przez
                 miesiąc ZA DARMO!
                     Nie czekaj! Liczba miejsc ograniczona!
@@ -44,5 +46,16 @@
             </p>
     </div>
 </header>
+<script>
+    function popupOpen() {
+        var element = document.querySelector('#formMain');
+        element.style.display = "block";
+        var element = document.querySelector('.btn');
+        element.style.display = "none";
+        var element = document.querySelector('.text');
+        element.style.display = "none";
+    }
+</script>
+</head>
 </body>
 </html>
