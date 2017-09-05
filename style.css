@@ -1,3 +1,8 @@
+
+
+
+
+
 article {
 
 
@@ -11,4 +16,22 @@ article {
 
 
 
+}
+
+
+.bg {
+
+    background: url("images/tlo.jpg")center/cover no-repeat scroll;
+    padding: 15px;
+    text-align: center;
+    color: #ADC43E;
+    font-size: 1.875em;
+
+}
+
+.photo {
+
+    background: url("images/ekipa.jpg") left/cover no-repeat;
+    text-align: left;
+    font-size: 1.875em;
 }
