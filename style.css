@@ -77,8 +77,6 @@ ul li:hover::after{
 #formMain{
     width: 260px;
     margin: 0 auto;
-    border: 5px solid gray;
-    border-radius: 1px;
     padding: 20px;
     margin-right: 90px;
     margin-top: -10px;
@@ -86,8 +84,10 @@ ul li:hover::after{
     position: absolute;
     top: 300px;
     right: 150px;
-    background: #001f3f;
+    background: #fff;
     font-family: 'Montserrat' sans-serif;
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 5px;
 }
 #formMain label{
     display: block;
@@ -126,6 +126,7 @@ ul li:hover::after{
     left: 250px;
     font-size: 2.6em;
     font-weight: solid;
+    letter-spacing: -.007em;
 }
 
 .headerText p{
