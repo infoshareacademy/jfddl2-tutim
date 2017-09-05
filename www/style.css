@@ -4,72 +4,98 @@
 
 body {
     font-family: 'Montserrat';
+    background-color: #f8f8f9;
 }
 
 .aboutfitstyle {
- width: 1440px;
- height:890px;
- background-color: #f8f8f9;
+position: relative;
 }
 
 /* 6 strong features with description */
 
-.keyfeatures-l {
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(80, 82, 85);
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: right;
-    position: absolute;
-    float:left;
-    width:20%;
-   }
-
-.keyfeatures-r {
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(80, 82, 85);
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: right;
-    position: absolute;
-    float:right;
-    width:80%;
+.keyfeatures-l.flex,
+.keyfeatures-r.flex {
+    flex-direction: column;
+    position: relative;
     }
+
+.keyfeatures-r::after {
+    content: '';
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    background: url('images/bg-pattern.png');
+    background-size: 3px 10px;
+    background-repeat: repeat-y;
+}
+
+.telephone {
+    width: 30%;
+}
+
+
+.telephone img {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+}
+
+.wrap{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+
+}
 
 /* Container h2 */
 
 .fitheader h2 {
-    font-size: 45px;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(173, 197, 62);
+
     text-align: center;
-    position: absolute;
+    font-size: 3em;
+    color: rgb(173, 197, 62);
+    position: relative;
 }
 
 /* purple line below h2 */
 
-.pline {
-    height: 5px;
-    margin-top: 10px;
-    margin-bottom: 35px;
+.pline::after {
+    position: absolute;
+    height: 0.5em;
+    margin-top: 10%;
+    margin-bottom: 10%;
     background-color: #933ec5;
     opacity: 1;
-    width: 75px;
+    width: 20%
 }
 
-.iconcircle {
-   border-radius: 50%;
-   background-color: rgb(255, 255, 255);
-   position: absolute;
+.icon-circle {
+   width: 15%;
+    position: relative;
+    z-index: 1;
         }
-
-.telephone img {
-    padding: 35px 0 35px 0;
+.icon-circle::after {
+    content: '';
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%;
+    background: red;
     position: absolute;
-    text-align: center;
-   }
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 50%;
+    transform: scale(1.4);
+}
+.icon-circle img {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+}
+
 
 .flex {
     display: -webkit-box;
