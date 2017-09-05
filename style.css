@@ -2,24 +2,39 @@ body{
     margin: 0 auto;
     padding: 0;
     color: white;
-    max-width: 1440px;
-    height:10000px;
+    height: 10000px;
+
 }
 header{
-    width:auto;
-    height:715px;
+    min-height: 715px;
     background: url('images/fitstyle_01.jpg') no-repeat;
+    background-size: cover;
 }
-ul{
+ ul{
     margin: 0;
     padding: 0;
     list-style: none;
-    position: fixed;
-    top: 20px;
-    right:40px;
-    margin-top: 20px;
-    margin-right: 250px;
 
+    /*top: 20px;*/
+    /*right:40px;*/
+    /*margin-top: 20px;*/
+    /*margin-right: 250px;*/
+
+}
+
+.pic{
+    position: fixed;
+}
+
+.menuPic{
+   display: flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+}
+
+.mainNav{
+    position: fixed;
+    margin-top: 20px;
 }
 
 ul li{
@@ -43,6 +58,7 @@ ul li a {
     font-weight: bolder;
     font-size: 1.6em;
     text-decoration: wavy transparent;
+    font-family: 'Montserrat' sans-serif;
 }
 
 ul li::after{
@@ -71,6 +87,7 @@ ul li:hover::after{
     top: 300px;
     right: 150px;
     background: #001f3f;
+    font-family: 'Montserrat' sans-serif;
 }
 #formMain label{
     display: block;
@@ -81,6 +98,7 @@ ul li:hover::after{
     color: #555555;
     color: white;
     border: #001f3f;
+    font-family: 'Montserrat' sans-serif;
 }
 
 #formMain textarea,
