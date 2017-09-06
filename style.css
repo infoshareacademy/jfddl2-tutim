@@ -32,6 +32,14 @@ article {
 .photo {
 
     background: url("images/ekipa.jpg") left/cover no-repeat;
+    background-size: auto
     text-align: left;
-    font-size: 1.875em;
+    font-size: 30px;
+
 }
+
+.photo
+
+
+}
+
