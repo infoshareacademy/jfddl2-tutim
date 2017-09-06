@@ -1,45 +1,69 @@
 
 
+.photo-lady{
 
-
-
-article {
-
-
+    background: url("../jfddl2-tutim/images/zdjecie-pani2.jpg");
 
 
 }
 
-.article {
+.photo-lady2 {
 
-
-
+    background:url("../jfddl2-tutim/images/zdjecie-pani.jpg")
 
 
 }
 
+.banner {
 
-.bg {
-
-    background: url("images/tlo.jpg")center/cover no-repeat scroll;
-    padding: 15px;
+    background: url("../jfddl2-tutim/images/tlo.jpg");
     text-align: center;
     color: #ADC43E;
-    font-size: 1.875em;
+    height: 9em;
 
 }
 
-.photo {
 
-    background: url("images/ekipa.jpg") left/cover no-repeat;
-    background-size: auto
-    text-align: left;
-    font-size: 30px;
+h2 {
+
+    text-align: center;
 
 }
 
-.photo
+
+.team-photo {
+
+    background: url("../jfddl2-tutim/images/ekipa.jpg") center no-repeat;
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
