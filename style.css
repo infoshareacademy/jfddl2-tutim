@@ -1,132 +1,28 @@
-.page-footer{
+.-footer{
     background-image: url(tlo2_02.jpg);
     font-family: Montserrat;
-
+    color: #D9D9D9;
+    height: 400px;
 }
 
-.more{
-    color:white;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 1.5em;
-    padding-top: 1.85em;
-}
-
-/*.logo img{*/
-    /*width: 15%;*/
-}
-
-.page-footer-black{
+.-black{
     background-color: black;
-}
-
-
-ul{
-    list-style: none;
-
-
-
+    height: 100px;
 
 }
-.page-footer-mail a{
+
+.-end{
+    height: 20px;
+}
+
+.i{
     text-decoration: none;
     color: white;
-    font-family: sans-serif;
-}
+    }
 
-.page-footer-mail i{
-    border: 0px;
-}
-
-.page-footer-mail a{
-    color: #D9D9D9;
-    font-size: 0.8em;
-}
-
-.page-footer-mail a:hover{
-    background-color: darkgrey;
-    transition: 0.4s;
-}
-
-.page-footer-phone i{
-    border: 0px;
-    color: white;
-}
-
-.page-footer-copyright strong{
-    font-weight: bold;
-    color:white;
-}
-
-i{
-    color: white;
-    border: 2px solid white;
-    border-radius: 100%;
-    padding: 0.6em;
-    padding-bottom: 0.6em;
-    max-height: 0.6em;
-
-}
-
-ul li{
-    display: inline;
-}
-span{
-    color: #D9D9D9;
-    font-size: 0.8em;
-}
-
-strong{
-    color: white;
-
-}
-
-.page-footer-black{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 1em;
-}
-
-.media ul{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-.fa{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.page-footer-copyright{
-    align-self: center;
-}
-
-.page-footer-mail{
-    align-self: center;
-}
-
-.page-footer-phone{
-    align-self: center;
-}
-
-form{
-    opacity: 0.1;
-    color: #D9D9D9;
-    border: solid #D9D9D9;;
-}
-
-.last{
-    background-image: url(tlo2_02.jpg);
-    opacity: 0;
-
-
-}
 
 .col-grey1{
-    height: 100px;
+    height: 200px;
     position: relative;
 }
 
@@ -138,3 +34,149 @@ form{
     width: 100%;
     height: 100px;
 }
+
+.col-black1{
+    height: 100px;
+    position: relative;
+}
+
+.copyright{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 50px;
+
+}
+
+/*.page-footer{*/
+    /*background-image: url(tlo2_02.jpg);*/
+    /*font-family: Montserrat;*/
+
+/*}*/
+
+/*.more{*/
+    /*color:white;*/
+    /*text-align: center;*/
+    /*font-family: Montserrat;*/
+    /*font-size: 1.5em;*/
+    /*padding-top: 1.85em;*/
+/*}*/
+
+/*}*/
+
+/*.page-footer-black{*/
+    /*background-color: black;*/
+/*}*/
+
+
+/*ul{*/
+    /*list-style: none;*/
+
+
+
+
+/*}*/
+/*.page-footer-mail a{*/
+    /*text-decoration: none;*/
+    /*color: white;*/
+    /*font-family: sans-serif;*/
+/*}*/
+
+/*.page-footer-mail i{*/
+    /*border: 0px;*/
+/*}*/
+
+/*.page-footer-mail a{*/
+    /*color: #D9D9D9;*/
+    /*font-size: 0.8em;*/
+/*}*/
+
+/*.page-footer-mail a:hover{*/
+    /*background-color: darkgrey;*/
+    /*transition: 0.4s;*/
+/*}*/
+
+/*.page-footer-phone i{*/
+    /*border: 0px;*/
+    /*color: white;*/
+/*}*/
+
+/*.page-footer-copyright strong{*/
+    /*font-weight: bold;*/
+    /*color:white;*/
+/*}*/
+
+/*i{*/
+    /*color: white;*/
+    /*border: 2px solid white;*/
+    /*border-radius: 100%;*/
+    /*padding: 0.6em;*/
+    /*padding-bottom: 0.6em;*/
+    /*max-height: 0.6em;*/
+
+/*}*/
+
+/*ul li{*/
+    /*display: inline;*/
+/*}*/
+/*span{*/
+    /*color: #D9D9D9;*/
+    /*font-size: 0.8em;*/
+/*}*/
+
+/*strong{*/
+    /*color: white;*/
+
+/*}*/
+
+/*.page-footer-black{*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*flex-direction: row;*/
+    /*padding: 1em;*/
+/*}*/
+
+/*.media ul{*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*flex-direction: row;*/
+/*}*/
+
+/*.fa{*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+/*}*/
+
+/*.page-footer-copyright{*/
+    /*align-self: center;*/
+/*}*/
+
+/*.page-footer-mail{*/
+    /*align-self: center;*/
+/*}*/
+
+/*.page-footer-phone{*/
+    /*align-self: center;*/
+/*}*/
+
+/*form{*/
+    /*opacity: 0.1;*/
+    /*color: #D9D9D9;*/
+    /*border: solid #D9D9D9;;*/
+/*}*/
+
+/*.last{*/
+    /*background-image: url(tlo2_02.jpg);*/
+    /*opacity: 0;*/
+
+
+/*}*/
+
+
+
+/*.col-grey2{*/
+
+/*}*/
