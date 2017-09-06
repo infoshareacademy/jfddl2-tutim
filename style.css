@@ -1,64 +1,40 @@
-body{
-    margin: 0 auto;
-    padding: 0;
-    color: white;
-    height: 10000px;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900&subset=latin-ext');
 
+
+body{
+    margin:0 auto;
+    padding: 0;
+    height: 1000px;
 }
-header{
-    min-height: 715px;
+
+.wrapper{
     background: url('images/fitstyle_01.jpg') no-repeat;
     background-size: cover;
-}
- ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    /*top: 20px;*/
-    /*right:40px;*/
-    /*margin-top: 20px;*/
-    /*margin-right: 250px;*/
-
+    height: 715px;
 }
 
-.pic{
-    position: fixed;
+.navbar{
+    background: transparent;
 }
 
-.menuPic{
-   display: flex;
-    justify-content: flex-end;
-    margin-right: 200px;
+.navbar-default{
+    border-color: transparent;
 }
 
-.mainNav{
-    position: fixed;
-    margin-top: 20px;
+.navbar-default .navbar-collapse{
+    border-color: transparent;
 }
 
-ul li{
-    float: left;
-    width: 200px;
-    height: 40px;
-    background:transparent;
-    line-height: 40px;
-    text-align: center;
-    display: inline-block;
-
-
-
-}
-ul li a {
-    text-decoration: none;
+.navbar-default .navbar-nav li a{
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.8em;
     text-transform: lowercase;
-    color: white;
-    display: block;
-    color: white;
-    font-weight: bolder;
-    font-size: 1.6em;
-    text-decoration: wavy transparent;
-    font-family: 'Montserrat' sans-serif;
+}
+.navbar-default .navbar-nav{
+    margin-top: 40px;
+    margin-right: 30px;
 }
 
 ul li::after{
@@ -73,98 +49,17 @@ ul li:hover::after{
     width: 100%;
     transition: width .4s;
 }
+.navbar-default .navbar-nav li a:hover{
+    color:white;
+}
 
 #formMain{
-    width: 260px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-right: 90px;
-    margin-top: -10px;
-    display: none;
-    position: absolute;
-    top: 300px;
-    right: 150px;
-    background: #fff;
-    font-family: 'Montserrat' sans-serif;
-    box-shadow: 2px 2px 2px 2px gray;
-    border-radius: 5px;
+ width:260px;
+    height: 300px;
+    background-color:white;
+    margin-top: 300px;}
+
+h6{
+    position:absolute;
+    top: 400px;
 }
-#formMain label{
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #555555;
-    color: white;
-    border: #001f3f;
-    font-family: 'Montserrat' sans-serif;
-}
-
-#formMain textarea,
-#formMain input {
-    padding: 5px;
-    border-radius: 3px;
-    border: 2px solid rgb(147,62,197);
-    margin-bottom: 25px;
-    width: 245px;
-    background: ghostwhite;
-    color: black;
-    font-size: 1.1em;
-}
-
-#formularz input#submit {
-    width: 255px;
-    cursor: pointer;
-    margin-bottom: 0px;
-}
-
-.headerText h2 {
-    color:rgb(173,197,62);
-    position: absolute;
-    top: 200px;
-    left: 250px;
-    font-size: 2.6em;
-    font-weight: solid;
-    letter-spacing: -.007em;
-}
-
-.headerText p{
-    position: absolute;
-    width: 300px;
-    font-size: 1.4em;
-    font-weight: bold;
-    border: solid #001f3f;
-    margin-left: 20px;
-    border-radius: 5px;
-    padding: 15px;
-    top: 275px;
-    left: 1275px;
-
-
-}
-
-.btn{
-    position: absolute;
-    right: 400px;
-    top: 600px;
-    padding: 7px;
-    font-size: 1.2em;
-    border-radius: 5px;
-    background: transparent;
-    border: solid #001f3f;
-    color: white;
-    font-weight: bold;
-}
- .btn:hover {
-     curosor: pointer;
- }
-
-
- .pic img{
-     position: fixed;
-     width: 15%;
-     left: 300px;
-     top: 5px;
-
- }
