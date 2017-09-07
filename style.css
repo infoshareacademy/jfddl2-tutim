@@ -100,7 +100,7 @@ div p.text{
     margin-top: 50px;
 
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     h6#linkform  a{
         color: white;
         top: 400px;
@@ -142,6 +142,11 @@ div p.text{
     ul li:hover::after{
         width: 30%;
         transition: width .4s;
+/*}*/
+    /*button .navbar-collapse{*/
+        /*position: absolute;*/
+        /*left: 100xp; */
+    /*}*/
 }}
 
 
