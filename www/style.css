@@ -1,0 +1,330 @@
+<<<<<<< Updated upstream
+=======
+
+ /*Kod Jakub Markiewicz, versja przed merge*/
+/*Początek kodu*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&subset=vietnamese');
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7f8;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.pline::before {
+    content: '';
+    width: 15.791667%;
+    height: 0.4em;
+    background: #933ec4;
+    position: absolute;
+    top: 5.6em;
+    left: 42.958333%;
+}
+
+h1 {
+    color: #adc43e;
+    text-align: center;
+    font-weight:500;
+    padding-bottom: 5%;
+
+}
+
+.img img {
+    /*height:auto;*/
+    /*width: auto;*/
+    /*max-width: 100%;*/
+    /*padding-top: 5%;*/
+    /*padding-bottom: 10%;*/
+    max-width: 75%;
+    margin-left: 12%;
+}
+
+ .iconwrap::after {
+     content: '';
+     position: absolute;
+     height: 5em;
+     width: 5em;
+     padding-bottom: 5em;
+     background: white;
+     top: 3.6em;
+     left: 2.3em;
+     z-index: -1;
+     border-radius: 50%;
+     transform: scale(1.5);
+ }
+ .iconwrap2::after {
+     content: '';
+     position: absolute;
+     height: 5em;
+     width: 5em;
+     padding-bottom: 5em;
+     background: white;
+     top: 14.9em;
+     left: 2.3em;
+     z-index: -1;
+     border-radius: 50%;
+     transform: scale(1.5);
+ }
+
+ .iconwrap3::after {
+     content: '';
+     position: absolute;
+     height: 5em;
+     width: 5em;
+     padding-bottom: 5em;
+     background: white;
+     top: 29.6em;
+     left: 2.3em;
+     z-index: -1;
+     border-radius: 50%;
+     transform: scale(1.5);
+ }
+
+
+ .iconline::before {
+     content: '';
+     width: 30px;
+     height: 100%;
+     position: absolute;
+     top: 10%;
+     left: 10%;
+     background: url('images/bg-pattern.png');
+     background-size: 3px 10px;
+     background-repeat: repeat-y;
+     z-index: 3;
+ }
+
+.iconfit {
+    position:relative;
+}
+
+.iconfit p {
+    color: #82858c;
+    font-size: 0.7em;
+}
+
+.iconfit-r h3 {
+    font-size: 1em;
+    color: #505255;
+    font-weight: 800;
+    text-align: left;
+}
+
+.iconfit-r p {
+    color: #82858c;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+
+.iconfit-l h3 {
+    font-size: 1em;
+    color: #505255;
+    font-weight: 800;
+    text-align: right;
+}
+
+.iconfit-l p {
+    color: #82858c;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+
+.iconfita  {
+    position: relative;
+}
+
+.firsticon {
+    position: absolute;
+    max-width: 70%;
+    left: 41%;
+    top: 4em;
+}
+
+.second-icon {
+    position: absolute;
+    max-width: 70%;
+    left: 41%;
+    top: 15em;
+}
+
+.third-icon {
+    position: absolute;
+    max-width: 70%;
+    left: 41%;
+    top: 30em;
+}
+
+.fourththicon {
+    position: absolute;
+    max-width: 70%;
+    top: 4em;
+}
+
+.five-icon {
+    position: absolute;
+    max-width: 70%;
+    top: 15em;
+}
+
+.six-icon {
+    position: absolute;
+    max-width: 70%;
+    top: 30em;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+
+    .img img {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .img {
+        height: auto;
+        width: 50%;
+        max-width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+        margin-left: 20%;
+    }
+
+    .firsticon {
+        position: absolute;
+        max-width: 100%;
+        left: 7em;
+        top: 8em;
+    }
+
+    .second-icon {
+        position: absolute;
+        max-width: 100%;
+        left: 7em;
+        top: 0;
+    }
+
+    .third-icon {
+        position: absolute;
+        max-width: 100%;
+        left: 7em;
+        top: 18em;
+    }
+
+    .fourththicon {
+        position: absolute;
+        max-width: 100%;
+        left: 2em;
+        top: 1em;
+    }
+
+    .five-icon {
+        position: absolute;
+        max-width: 100%;
+        left: 2em;
+        top: 9em;
+    }
+
+    .six-icon {
+        position: absolute;
+        max-width: 100%;
+        left: 2em;
+        top: 18em;
+    }
+
+    .img img {
+        height: auto;
+        width: 50%;
+        max-width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+        margin-left: 20%;
+    }
+
+    .iconfitd {
+        padding-left:10%;
+    }
+
+}
+
+
+@media screen and (max-width: 490px) {
+    .iconfitd {
+        padding-left:10%;
+    }
+
+
+    .firsticon {
+        position: absolute;
+        max-width: 250%;
+        left: 3em;
+        top: 3em;
+    }
+
+    .second-icon {
+        position: absolute;
+        max-width: 250%;
+        left: 3em;
+        top: 12em;
+    }
+
+    .third-icon {
+        position: absolute;
+        max-width: 250%;
+        left: 3em;
+        top: 24em;
+    }
+
+    .fourththicon {
+        position: absolute;
+        max-width: 200%;
+        left: 0;
+        top: 2em;
+    }
+
+    .five-icon {
+        position: absolute;
+        max-width: 200%;
+        left:0;
+        top: 12em;
+    }
+
+    .six-icon {
+        position: absolute;
+        max-width: 200%;
+        left: 0;
+        top: 25em;
+    }
+
+    .img img {
+        height: auto;
+        width: 50%;
+        max-width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+        margin-left: 20%;
+    }
+
+}
+
+/*koniec kodu Jakub Markiewicz*/
+
+>>>>>>> Stashed changes
