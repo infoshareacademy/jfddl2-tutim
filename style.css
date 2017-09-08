@@ -12,6 +12,15 @@
     background-repeat: no-repeat;
 }
 
+.team-photo {
+
+
+    background-image:url("images/ekipa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 
     .banner1234 {
 
@@ -56,6 +65,7 @@ h3 {
 
 .p2 {
 
+
     margin-left:5%;
     margin-right:5%;
 
@@ -65,79 +75,5 @@ h3 {
 
     margin-right:5%;
     margin-bottom:5%;
-}
-
-.list-quotes {
-    cursor: pointer;
-    height: auto;
-    margin-bottom: 1.875em;
-    overflow: hidden;
-    position: relative;
-    display: block;
-    border-bottom: 0.0625em solid #adc43e;
-
-}
-.list-quotes img {
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    width: 100%;
-    height:100%;
-
-}
-.list-quotes img {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-
-.list-quotes p {
-    position: absolute;
-    bottom: -0.0625em;
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 0.625em;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0,3.125em,0);
-    transform: translate3d(0,0.32em,0);
-    font-size: 2em;
-    font-weight: normal;
-    background: rgba(173, 196, 62, 0.8);
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    letter-spacing: 0.09375em;
-}
-
-.list-quotes:hover img {
-    -webkit-transform: translate3d(0,-5em,0);
-    transform: scale(1.2);
-    transition: all 250ms ease;
-}
-
-.list-quotes:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-} 
-
-.parent
-
-{
-    height: 100px;
-    position: relative;
-}
-
-.team-child {
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 110%;
-    height: 100%;
-
 }
 
