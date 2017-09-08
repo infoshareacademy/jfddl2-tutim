@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container-fluid{
     background-image: url(tlo2_02.jpg);
     background-size: cover;
@@ -122,3 +123,157 @@ img{
     padding-bottom: 50px;
     padding-top: 50px;
 }
+=======
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900&subset=latin-ext');
+
+
+body{
+    margin:0 auto;
+    padding: 0;
+    height: 1000px;
+}
+
+.wrapper{
+    background: url('images/fitstyle_01.jpg') no-repeat;
+    background-size: cover;
+    height: 715px;
+}
+
+.navbar{
+    background: transparent;
+}
+
+.navbar-default{
+    border-color: transparent;
+}
+
+.navbar-default .navbar-collapse{
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav li a{
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.8em;
+    text-transform: lowercase;
+}
+.navbar-default .navbar-nav{
+    margin-top: 40px;
+    margin-right: 30px;
+}
+
+ul li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    transition: width .4s;
+    background:rgb(147,62,197);
+}
+ul li:hover::after{
+    width: 100%;
+    transition: width .4s;
+}
+.navbar-default .navbar-nav li a:hover{
+    color:white;
+}
+
+#formMain{
+    width:350px;
+    height: 200px;
+    background-color:white;
+    margin-top: 300px;
+    border-radius: 3%;
+}
+
+
+
+h6#linkform a{
+    position:absolute;
+    top: 600px;
+    right: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+h1.heading{
+    color: #adc43e;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 5em;
+    position: absolute;
+    top: 220px;
+    right: 240px;
+    cursor: pointer;
+
+}
+div p.text{
+    color:white;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 2em;
+    position: absolute;
+    top: 320px;
+    right: 300px;
+    width: 450px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+@media (max-width: 480px) {
+    h6#linkform  a{
+        color: white;
+        top: 400px;
+        left: 100px;
+        font-weight: 600;
+        width: 300px;
+
+    }
+    h1.heading{
+        color: #adc43e;
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 2em;
+        cursor: pointer;
+        top:240px;
+        left: 120px;
+        text-decoration: underline #adc43e;
+    }
+    #formMain{
+        width:300px;
+        height: 200px;
+        background-color:white;
+        margin-top: 500px;
+        border-radius: 3%;
+    }
+    div p.text{
+        display: none;
+
+}
+
+    ul li::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        transition: width .4s;
+        background:rgb(147,62,197);
+    }
+    ul li:hover::after{
+        width: 30%;
+        transition: width .4s;
+/*}*/
+    /*button .navbar-collapse{*/
+        /*position: absolute;*/
+        /*left: 100xp; */
+    /*}*/
+}}
+
+
+>>>>>>> c766d18b3ce0bb19cf0fa6ef21fac8537f01229b
