@@ -1,79 +1,279 @@
-.photo-woman {
-
-    background-image: url("images/zdjecie-pani.jpg");
+<<<<<<< HEAD
+.container-fluid{
+    background-image: url(tlo2_02.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    font-family: Montserrat;
+    color: #D9D9D9;
+    height: 400px;
+}
+.grey{
+    height: 200px;
 }
 
-.photo-woman2 {
+.black{
+    background-color: black;
+    height: 100px;
+    }
 
-    background-image: url("images/zdjecie-pani2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.end{
+    background-image: url(tlo2_02.jpg);
 }
 
-.team-photo {
+.logo{
+    height: 200px;
+    position: relative;
+}
 
+img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+}
 
-    background-image:url("images/ekipa.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.copyright{
+    height: 200px;
+    position: relative;
+}
+
+.tutim {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+    color:  #D9D9D9;
+}
+
+.tutim strong{
+    color: white;
+    font-weight: bold;
+}
+
+.media{
+    height: 200px;
+    position: relative;
+}
+
+.smallmedia {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+}
+
+.contact{
+    height: 200px;
+    position: relative;
+}
+
+.mailphone {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+}
+
+.media a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    }
+
+.contact .mailphone .mail a{
+    text-decoration: none;
+    color: #D9D9D9;
+    font-size: 1.5em;
 
 }
 
-
-    .banner1234 {
-
-    background: url("images/tlo.jpg");
+.contact .mailphone .mail i {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
     text-align: center;
+}
+
+.contact .mailphone .phone{
+    color: #D9D9D9;
+    font-size: 1.5em;
+}
+
+.contact .mailphone .phone i{
+    color: white;
+}
+
+.copyright{
+    color:white;
+    font-size: 1,5em;
+}
+
+.more .form-inline{
+
+}
+
+.more h2{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+=======
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900&subset=latin-ext');
+
+
+body{
+    margin:0 auto;
+    padding: 0;
+    height: 1000px;
+}
+
+.wrapper{
+    background: url('images/fitstyle_01.jpg') no-repeat;
+    background-size: cover;
+    height: 715px;
+}
+
+.navbar{
+    background: transparent;
+}
+
+.navbar-default{
+    border-color: transparent;
+}
+
+.navbar-default .navbar-collapse{
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav li a{
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.8em;
+    text-transform: lowercase;
+}
+.navbar-default .navbar-nav{
+    margin-top: 40px;
+    margin-right: 30px;
+}
+
+ul li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    transition: width .4s;
+    background:rgb(147,62,197);
+}
+ul li:hover::after{
+    width: 100%;
+    transition: width .4s;
+}
+.navbar-default .navbar-nav li a:hover{
+    color:white;
+}
+
+#formMain{
+    width:350px;
+    height: 200px;
+    background-color:white;
+    margin-top: 300px;
+    border-radius: 3%;
+}
+
+
+
+h6#linkform a{
+    position:absolute;
+    top: 600px;
+    right: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+h1.heading{
     color: #adc43e;
-    padding-top:3%;
-    padding-bottom:3%;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 5em;
+    position: absolute;
+    top: 220px;
+    right: 240px;
+    cursor: pointer;
 
 }
-
-.button1234 {
-
-    background-color:#933EC4;
-    margin-left: 65%;
-    margin-bottom: 10%;
-    margin-top:5%;
-    width: 30%;
-    height: 12%;
-    border-radius: 0.8em;
-}
-
-h2 {
-
+div p.text{
+    color:white;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 2em;
+    position: absolute;
+    top: 320px;
+    right: 300px;
+    width: 450px;
     text-align: center;
+    margin-top: 50px;
+
+}
+@media (max-width: 480px) {
+    h6#linkform  a{
+        color: white;
+        top: 400px;
+        left: 100px;
+        font-weight: 600;
+        width: 300px;
+
+    }
+    h1.heading{
+        color: #adc43e;
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 2em;
+        cursor: pointer;
+        top:240px;
+        left: 120px;
+        text-decoration: underline #adc43e;
+    }
+    #formMain{
+        width:300px;
+        height: 200px;
+        background-color:white;
+        margin-top: 500px;
+        border-radius: 3%;
+    }
+    div p.text{
+        display: none;
 
 }
 
-h3 {
+    ul li::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        transition: width .4s;
+        background:rgb(147,62,197);
+    }
+    ul li:hover::after{
+        width: 30%;
+        transition: width .4s;
+/*}*/
+    /*button .navbar-collapse{*/
+        /*position: absolute;*/
+        /*left: 100xp; */
+    /*}*/
+}}
 
-    font-size: 3em;
-}
 
-
-.p1 {
-
-    margin-left:5%;
-    margin-right:5%;
-
-
-}
-
-.p2 {
-
-
-    margin-left:5%;
-    margin-right:5%;
-
-}
-
-.p3 {
-
-    margin-right:5%;
-    margin-bottom:5%;
-}
-
+>>>>>>> c766d18b3ce0bb19cf0fa6ef21fac8537f01229b
