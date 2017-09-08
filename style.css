@@ -1,0 +1,124 @@
+.container-fluid{
+    background-image: url(tlo2_02.jpg);
+    background-size: cover;
+    font-family: Montserrat;
+    color: #D9D9D9;
+    height: 400px;
+}
+.grey{
+    height: 200px;
+}
+
+.black{
+    background-color: black;
+    height: 100px;
+    }
+
+.end{
+    background-image: url(tlo2_02.jpg);
+}
+
+.logo{
+    height: 200px;
+    position: relative;
+}
+
+img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+}
+
+.copyright{
+    height: 200px;
+    position: relative;
+}
+
+.tutim {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+    color:  #D9D9D9;
+}
+
+.tutim strong{
+    color: white;
+    font-weight: bold;
+}
+
+.media{
+    height: 200px;
+    position: relative;
+}
+
+.smallmedia {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+}
+
+.contact{
+    height: 200px;
+    position: relative;
+}
+
+.mailphone {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+}
+
+.media a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    }
+
+.contact .mailphone .mail a{
+    text-decoration: none;
+    color: #D9D9D9;
+    font-size: 1.5em;
+
+}
+
+.contact .mailphone .mail i {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+.contact .mailphone .phone{
+    color: #D9D9D9;
+    font-size: 1.5em;
+}
+
+.contact .mailphone .phone i{
+    color: white;
+}
+
+.copyright{
+    color:white;
+    font-size: 1,5em;
+}
+
+.more .form-inline{
+
+}
+
+.more h2{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
