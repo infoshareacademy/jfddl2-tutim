@@ -1,81 +1,112 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900&subset=latin-ext');
 
-
+/*Piotr Iwańczuk - start*/
 body{
     margin:0 auto;
     padding: 0;
-    height: 1000px;
+    height: 10000px;
 }
+@media (max-width:1200px) {
+    .wrapper {
+        background: url('images/fitstyle_01.jpg') no-repeat;
+        background-size: cover;
+        height: 715px;
+    }
 
-.wrapper{
-    background: url('images/fitstyle_01.jpg') no-repeat;
-    background-size: cover;
-    height: 715px;
+    .navbar {
+        background: transparent;
+    }
+
+    .navbar-default {
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-collapse {
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-nav li a {
+        color: white;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 1.8em;
+        text-transform: lowercase;
+    }
+
+    .navbar-default .navbar-nav {
+        margin-top: 40px;
+        margin-right: 30px;
+    }
+
+    ul li::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        transition: width .4s;
+        background: rgb(147, 62, 197);
+    }
+
+    ul li:hover::after {
+        width: 100%;
+        transition: width .4s;
+    }
+
+    .navbar-default .navbar-nav li a:hover {
+        color: white;
+    }
+
+    #formMain {
+        width: 350px;
+        height: 60px;
+        background-color: white;
+        margin-top: 300px;
+        box-shadow: 1px 1px 1px 1px lightslategray;
+    }
+
+    #formMain label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #555555;
+        color: white;
+        border: #001f3f;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #formMain textarea,
+    #formMain input {
+        padding: 5px;
+        border-radius: 3px;
+        border: 2px solid rgb(147, 62, 197);
+        margin-bottom: 25px;
+        width: 245px;
+        background: ghostwhite;
+        color: black;
+        font-size: 1.1em;
+    }
+
+    #formularz input#submit {
+        width: 255px;
+        cursor: pointer;
+        margin-bottom: 0px;
+    }
+
+    h6#linkform a {
+        position: absolute;
+        top: 600px;
+        right: 100px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2em;
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+
+    }
 }
-
-.navbar{
-    background: transparent;
-}
-
-.navbar-default{
-    border-color: transparent;
-}
-
-.navbar-default .navbar-collapse{
-    border-color: transparent;
-}
-
-.navbar-default .navbar-nav li a{
-    color: white;
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 1.8em;
-    text-transform: lowercase;
-}
-.navbar-default .navbar-nav{
-    margin-top: 40px;
-    margin-right: 30px;
-}
-
-ul li::after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 4px;
-    transition: width .4s;
-    background:rgb(147,62,197);
-}
-ul li:hover::after{
-    width: 100%;
-    transition: width .4s;
-}
-.navbar-default .navbar-nav li a:hover{
-    color:white;
-}
-
-#formMain{
-    width:350px;
-    height: 200px;
-    background-color:white;
-    margin-top: 300px;
-    border-radius: 3%;
-}
-
-
-
-h6#linkform a{
-    position:absolute;
-    top: 600px;
-    right: 100px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2em;
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-
-}
-
 h1.heading{
     color: #adc43e;
     font-family: "Montserrat";
@@ -98,38 +129,296 @@ div p.text{
     width: 450px;
     text-align: center;
     margin-top: 50px;
-
 }
-@media (max-width: 480px) {
-    h6#linkform  a{
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .wrapper {
+        background: url('images/fitstyle_01.jpg') no-repeat;
+        background-size: cover;
+        height: 715px;
+    }
+
+    .navbar {
+        background: transparent;
+    }
+
+    .navbar-default {
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-collapse {
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-nav li a {
         color: white;
-        top: 400px;
-        left: 100px;
-        font-weight: 600;
-        width: 300px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 1.8em;
+        text-transform: lowercase;
+    }
+
+    .navbar-default .navbar-nav {
+        margin-top: 40px;
+        margin-right: 30px;
+    }
+
+    ul li::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        transition: width .4s;
+        background: rgb(147, 62, 197);
+    }
+
+    ul li:hover::after {
+        width: 30%;
+        transition: width .4s;
+    }
+
+    .navbar-default .navbar-nav li a:hover {
+        color: white;
+    }
+
+    #formMain {
+        width: 260px;
+        height: 210px;
+        background-color: white;
+        margin-top: 300px;
+        box-shadow: 1px 1px 1px 1px lightslategray;
+    }
+
+    #formMain label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #555555;
+        color: white;
+        border: #001f3f;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #formMain textarea,
+    #formMain input {
+        padding: 5px;
+        border-radius: 3px;
+        border: 2px solid rgb(147, 62, 197);
+        margin-bottom: 25px;
+        width: 245px;
+        background: ghostwhite;
+        color: black;
+        font-size: 1.1em;
 
     }
+
+    #formularz input#submit {
+        width: 255px;
+        cursor: pointer;
+        margin-bottom: 0px;
+    }
+
+    h6#linkform a {
+        position: absolute;
+        top: 600px;
+        right: 100px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2em;
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+
+    }
+
+    h1.heading {
+        color: #adc43e;
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 4em;
+        position: absolute;
+        top: 220px;
+        right: 200px;
+        cursor: pointer;
+
+    }
+
+    div p.text {
+        color: white;
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 1.7em;
+        position: absolute;
+        top: 320px;
+        right: 100px;
+        width: 450px;
+        text-align: center;
+        margin-top: 50px;
+
+    }
+}
+@media only screen and (min-width : 768px){
+    .wrapper{
+        background: url('images/fitstyle_01.jpg') no-repeat;
+        background-size: cover;
+        height: 715px;
+    }
+
+    .navbar{
+        background: transparent;
+    }
+
+    .navbar-default{
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-collapse{
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-nav li a{
+        color: white;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 1.8em;
+        text-transform: lowercase;
+    }
+    .navbar-default .navbar-nav{
+        margin-top: 40px;
+        margin-right: 30px;
+    }
+
+    ul li::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        transition: width .4s;
+        background:rgb(147,62,197);
+    }
+    ul li:hover::after{
+        width: 100%;
+        transition: width .4s;
+    }
+    .navbar-default .navbar-nav li a:hover{
+        color:white;
+    }
+
+    #formMain{
+        width:350px;
+        height: 60px;
+        background-color:white;
+        margin-top: 300px;
+        box-shadow: 1px 1px 1px 1px lightslategray;
+    }
+    #formMain label{
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #555555;
+        color: white;
+        border: #001f3f;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #formMain textarea,
+    #formMain input {
+        padding: 5px;
+        border-radius: 3px;
+        border: 2px solid rgb(147,62,197);
+        margin-bottom: 25px;
+        width: 245px;
+        background: ghostwhite;
+        color: black;
+        font-size: 1.1em;
+    }
+
+    #formularz input#submit {
+        width: 255px;
+        cursor: pointer;
+        margin-bottom: 0px;
+    }
+
+
+    h6#linkform a{
+        position:absolute;
+        top: 600px;
+        right: 100px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.6em;
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+
+    }
+
     h1.heading{
         color: #adc43e;
         font-family: "Montserrat";
         font-weight: 600;
-        font-size: 2em;
+        font-size: 3em;
+        position: absolute;
+        top: 220px;
+        right: 240px;
         cursor: pointer;
-        top:240px;
-        left: 120px;
-        text-decoration: underline #adc43e;
-    }
-    #formMain{
-        width:300px;
-        height: 200px;
-        background-color:white;
-        margin-top: 500px;
-        border-radius: 3%;
+
     }
     div p.text{
-        display: none;
+        color:white;
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 1.5em;
+        position: absolute;
+        top: 320px;
+        right: 300px;
+        width: 450px;
+        text-align: center;
+        margin-top: 50px;
+
+    }
 
 }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+    .wrapper{
+        background: url('images/fitstyle_01.jpg') no-repeat;
+        background-size: cover;
+        height: 715px;
+    }
+
+    .navbar{
+        background: transparent;
+    }
+
+    .navbar-default{
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-collapse{
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-nav li a{
+        color: white;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 1.8em;
+        text-transform: lowercase;
+    }
+    .navbar-default .navbar-nav{
+        margin-top: 40px;
+        margin-right: 30px;
+    }
 
     ul li::after{
         content: '';
@@ -142,11 +431,687 @@ div p.text{
     ul li:hover::after{
         width: 30%;
         transition: width .4s;
-/*}*/
-    /*button .navbar-collapse{*/
-        /*position: absolute;*/
-        /*left: 100xp; */
-    /*}*/
-}}
+    }
+    .navbar-default .navbar-nav li a:hover{
+        color:white;
+    }
+
+    #formMain{
+        width:320px;
+        height: 270px;
+        background-color:white;
+        margin-top: 300px;
+        box-shadow: 1px 1px 1px 1px lightslategray;
+    }
+    #formMain label{
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #555555;
+        color: white;
+        border: #001f3f;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #formMain textarea,
+    #formMain input {
+        padding: 5px;
+        border-radius: 3px;
+        border: 2px solid rgb(147,62,197);
+        margin-bottom: 25px;
+        width: 245px;
+        background: ghostwhite;
+        color: black;
+        font-size: 1.1em;
+    }
+
+    #formularz input#submit {
+        width: 255px;
+        cursor: pointer;
+        margin-bottom: 0px;
+    }
 
 
+    h6#linkform a{
+        position:absolute;
+        top: 600px;
+        right: 100px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.4em;
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+
+    }
+
+    h1.heading{
+        color: #adc43e;
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 1.6em;
+        position: absolute;
+        top: 200px;
+        left:100px;
+        cursor: pointer;
+
+    }
+    div p.text{
+        color:white;
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 1em;
+        position: absolute;
+        top: 620px;
+        right: 50px;
+        width: 450px;
+        text-align: center;
+        margin-top: 50px;
+        display:none;
+    }
+
+}
+
+/* Small Devices, Tablets */
+
+
+
+@media (max-width: 320px) {
+
+
+    h6#linkform  a{
+        color: white;
+        top: 400px;
+        left: 80px;
+        font-weight: 600;
+        width: 300px;
+
+    }
+    h1.heading{
+        color: #adc43e;
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 2em;
+        cursor: pointer;
+        top:240px;
+        right: 10px;
+        text-decoration: underline #adc43e;
+    }
+    #formMain{
+        width:300px;
+        height: 200px;
+        background-color:white;
+        margin-top: 500px;
+        border-radius: 3%;
+    }
+    div p.text{
+        display: none;
+
+    }
+
+    ul li::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        transition: width .4s;
+        background:rgb(147,62,197);
+    }
+    ul li:hover::after{
+        width: 30%;
+        transition: width .4s;
+
+    }}
+
+/*Piotr Iwańczuk - koniec*/
+
+/*Jakub Markiewicz - start*/
+
+.fitstylemodule {
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #f7f7f8 !important;
+}
+
+.kropki {
+    content: '(...)';
+    transform:rotate(90deg);
+    font-size: 2em;
+    color: #ff0000;
+    position:absolute;
+    top:0;
+}
+
+
+.tescik {
+    background-color:#ff0000;
+    margin: 1em 0 7em 0;
+    width:7em;
+    height: 7em;
+    background: white;
+    z-index: 2;
+    border-radius: 50%;
+    transform: scale(1.5);
+    line-height: 2em;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.rel{
+    position:relative;
+}
+
+.pline::before {
+    content: '';
+    width: 15.791667%;
+    height: 0.4em;
+    background: #933ec4;
+    position: absolute;
+    top: 5.6em;
+    left: 42.958333%;
+}
+
+h1 {
+    color: #adc43e;
+    text-align: center;
+    font-weight:500;
+    padding-bottom: 5%;
+
+}
+
+.img img {
+    /*height:auto;*/
+    /*width: auto;*/
+    /*max-width: 100%;*/
+    /*padding-top: 5%;*/
+    /*padding-bottom: 10%;*/
+    max-width: 75%;
+    margin-left: 12%;
+}
+
+.iconwrap{
+    position:absolute;}
+
+.iconwrap::after {
+    content: '';
+    position: absolute;
+    height: 5em;
+    width: 5em;
+    padding-bottom: 5em;
+    background: white;
+    top: 3.6em;
+    left: 2.3em;
+    z-index: -1;
+    border-radius: 50%;
+    transform: scale(1.5);
+}
+.iconwrap2::after {
+    content: '';
+    position: absolute;
+    height: 5em;
+    width: 5em;
+    padding-bottom: 5em;
+    background: white;
+    top: 14.9em;
+    left: 2.3em;
+    z-index: -1;
+    border-radius: 50%;
+    transform: scale(1.5);
+}
+
+.iconwrap3::after {
+    content: '';
+    position: absolute;
+    height: 5em;
+    width: 5em;
+    padding-bottom: 5em;
+    background: white;
+    top: 29.6em;
+    left: 2.3em;
+    z-index: -1;
+    border-radius: 50%;
+    transform: scale(1.5);
+}
+
+
+.iconline::before {
+    content: '';
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background: url('images/bg-pattern');
+    background-size: 3px 10px;
+    background-repeat: repeat-y;
+    z-index: 3;
+}
+
+.iconfit {
+    position:relative;
+}
+
+.iconfit p {
+    color: #82858c;
+    font-size: 0.7em;
+}
+
+.iconfit-r h3 {
+    font-size: 1em;
+    color: #505255;
+    font-weight: 800;
+    text-align: left;
+}
+
+.iconfit-r p {
+    color: #82858c;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+
+.iconfit-l h3 {
+    font-size: 1em;
+    color: #505255;
+    font-weight: 800;
+    text-align: right;
+}
+
+.iconfit-l p {
+    color: #82858c;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+
+.iconfita  {
+    position: relative;
+}
+
+.firsticon {
+    position: relative;
+    text-align: center;
+    max-width: 70%;
+    left: 41%;
+    top: 4em;
+}
+
+.second-icon {
+    position: relative;
+    text-align: center;
+    max-width: 70%;
+    left: 41%;
+    top: 15em;
+}
+
+.third-icon {
+    position: relative;
+    text-align: center;
+    max-width: 70%;
+    left: 41%;
+    top: 20em;
+}
+
+.fourththicon {
+    position: relative;
+    text-align: center;
+    max-width: 70%;
+    top: 2em;
+}
+
+.five-icon {
+    position: relative;
+    text-align: center;
+    max-width: 70%;
+    top: 1em;
+}
+
+.six-icon {
+    position: relative;
+    text-align: center;
+    max-width: 70%;
+    top: 1em;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+
+    .img img {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .img {
+        height: auto;
+        width: 50%;
+        max-width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+        margin-left: 20%;
+    }
+
+    .firsticon {
+        position: absolute;
+        max-width: 100%;
+        left: 7em;
+        top: 8em;
+    }
+
+    .second-icon {
+        position: absolute;
+        max-width: 100%;
+        left: 7em;
+        top: 0;
+    }
+
+    .third-icon {
+        position: absolute;
+        max-width: 100%;
+        left: 7em;
+        top: 18em;
+    }
+
+    .fourththicon {
+        position: absolute;
+        max-width: 100%;
+        left: 2em;
+        top: 1em;
+    }
+
+    .five-icon {
+        position: absolute;
+        max-width: 100%;
+        left: 2em;
+        top: 9em;
+    }
+
+    .six-icon {
+        position: absolute;
+        max-width: 100%;
+        left: 2em;
+        top: 18em;
+    }
+
+    .img img {
+        height: auto;
+        width: 50%;
+        max-width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+        margin-left: 20%;
+    }
+
+    .iconfitd {
+        padding-left:10%;
+    }
+
+}
+
+
+@media screen and (max-width: 490px) {
+    .iconfitd {
+        padding-left:10%;
+    }
+
+
+    .firsticon {
+        position: absolute;
+        max-width: 250%;
+        left: 3em;
+        top: 3em;
+    }
+
+    .second-icon {
+        position: absolute;
+        max-width: 250%;
+        left: 3em;
+        top: 12em;
+    }
+
+    .third-icon {
+        position: absolute;
+        max-width: 250%;
+        left: 3em;
+        top: 24em;
+    }
+
+    .fourththicon {
+        position: absolute;
+        max-width: 200%;
+        left: 0;
+        top: 2em;
+    }
+
+    .five-icon {
+        position: absolute;
+        max-width: 200%;
+        left:0;
+        top: 12em;
+    }
+
+    .six-icon {
+        position: absolute;
+        max-width: 200%;
+        left: 0;
+        top: 25em;
+    }
+
+    .img img {
+        height: auto;
+        width: 50%;
+        max-width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+        margin-left: 20%;
+    }
+
+}
+
+/*Jakub Markiewicz - koniec*/
+
+/*Maria Mioduska - start*/
+#siteEnd .container-fluid{
+    background-image: url('images/tlo2_02.jpg');
+    background-size: cover;
+    font-family: Montserrat;
+    color: #D9D9D9;
+    height: 400px;
+}
+.grey{
+    height: 200px;
+}
+
+.black{
+    background-color: black;
+    height: 100px;
+}
+
+.end{
+    background-image: url(tlo2_02.jpg);
+}
+
+.logo{
+    height: 200px;
+    position: relative;
+}
+
+.imgM{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+
+.copyright{
+    height: 200px;
+    position: relative;
+}
+
+.tutim {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+    color:  #D9D9D9;
+}
+
+.tutim strong{
+    color: white;
+    font-weight: bold;
+}
+
+.media{
+    height: 200px;
+    position: relative;
+}
+
+.smallmedia {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+}
+
+.contact{
+    height: 200px;
+    position: relative;
+}
+
+.mailphone {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+}
+
+.media a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.contact .mailphone .mail a{
+    text-decoration: none;
+    color: #D9D9D9;
+    font-size: 1.5em;
+
+}
+
+.contact .mailphone .mail i {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+.contact .mailphone .phone{
+    color: #D9D9D9;
+    font-size: 1.5em;
+}
+
+.contact .mailphone .phone i{
+    color: white;
+}
+
+.copyright{
+    color:white;
+    font-size: 1,5em;
+}
+
+.more .form-inline{
+
+}
+
+.more h2{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+/*Maria Mioduska - koniec*/
+
+/*Monika Musak - start*/
+
+.photo-woman {
+
+    background-image: url("images/zdjecie-pani.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo-woman2 {
+
+    background: url("images/zdjecie-pani2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-photo {
+
+    background: url('images/ekipa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.banner-img {
+
+    background: url('images/tlo.jpg');
+    text-align: center;
+    color: #adc43e;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.button1234 {
+
+    background-color: #933EC4;
+    margin-left: 65%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    width: 30%;
+    height: 12%;
+    border-radius: 0.8em;
+}
+
+p {
+
+    text-align: justify;
+    line-height: 150%;
+
+}
+
+h2 {
+
+    text-align: center;
+
+}
+
+h3 {
+    font-size: 3em;
+}
+
+/*Monika Musak - koniec*/
