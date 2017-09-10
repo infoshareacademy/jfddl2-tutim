@@ -38,6 +38,7 @@ body{
         margin-right: 30px;
     }
 
+
 ul li::after {
         content: '';
         display: block;
@@ -137,7 +138,18 @@ div p.text{
  img.flag{
     margin-top: -10%;
 }
-
+h6#linkform a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    transition: width .4s;
+    background: rgb(147, 62, 197);
+}
+h6#linkform a:hover::after{
+    width: 100%;
+    transition: width .4s;
+}
 
 
 /* Medium Devices, Desktops */
@@ -263,7 +275,7 @@ div p.text{
         border-radius: 3px;
         border: 2px solid rgb(147,62,197);
         margin-bottom: 25px;
-        width: 245px;
+        width: 200px;
         background: ghostwhite;
         color: black;
         font-size: 1.1em;
@@ -313,7 +325,10 @@ div p.text{
         margin-top: 50px;
         display:none;
     }
-
+    h6#linkform a:hover::after{
+        width: 45%;
+        transition: width .4s;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -342,11 +357,15 @@ div p.text{
         text-decoration: underline #adc43e;
     }
     #formMain{
-        width:300px;
-        height: 200px;
+        width:150px;
+        height: 210px;
         background-color:white;
         margin-top: 500px;
         border-radius: 3%;
+    }
+    #formMain textarea,
+    #formMain input{
+        width: 100px;
     }
     div p.text{
         display: none;
@@ -357,7 +376,15 @@ div p.text{
         width: 30%;
         transition: width .4s;
 
-    }}
+    }
+    h6#linkform a:hover::after{
+        width: 45%;
+        transition: width .4s;
+    }
+    button.navbar-toggle.collapsed{
+        margin-right: 10%;
+    }
+}
 
 /*Piotr Iwańczuk - koniec*/
 
@@ -720,6 +747,71 @@ h1 {
 
 /*Jakub Markiewicz - koniec*/
 
+/*Monika Musak - start*/
+
+.photo-woman {
+
+    background-image: url("images/zdjecie-pani.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 448px;
+}
+
+.photo-woman2 {
+
+    background: url("images/zdjecie-pani2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 453px;
+}
+
+.team-photo {
+
+    background: url('images/ekipa.jpg') no-repeat;
+    background-size: cover;
+    height: 444px;
+
+}
+
+.banner-img {
+
+    background: url('images/tlo.jpg');
+    text-align: center;
+    color: #adc43e;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.button1234 {
+
+    background-color: #933EC4;
+    margin-left: 65%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    width: 30%;
+    height: 12%;
+    border-radius: 0.8em;
+}
+
+p {
+
+    text-align: justify;
+    line-height: 150%;
+
+}
+
+h2 {
+
+    text-align: center;
+
+}
+
+h3 {
+    font-size: 3em;
+}
+
+/*Monika Musak - koniec*/
+
 /*Maria Mioduska - start*/
 #siteEnd .container-fluid{
     background-image: url('images/tlo2_02.jpg');
@@ -738,7 +830,7 @@ h1 {
 }
 
 .end{
-    background-image: url(tlo2_02.jpg);
+    background-image: url('images/tlo2_02.jpg');
 }
 
 .logo{
@@ -847,67 +939,3 @@ h1 {
 }
 /*Maria Mioduska - koniec*/
 
-/*Monika Musak - start*/
-
-.photo-woman {
-
-    background-image: url("images/zdjecie-pani.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 448px;
-}
-
-.photo-woman2 {
-
-    background: url("images/zdjecie-pani2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 453px;
-}
-
-.team-photo {
-
- background: url('images/ekipa.jpg') no-repeat;
- background-size: cover;
- height: 444px;
-
-}
-
-.banner-img {
-
-    background: url('images/tlo.jpg');
-    text-align: center;
-    color: #adc43e;
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
-.button1234 {
-
-    background-color: #933EC4;
-    margin-left: 65%;
-    margin-bottom: 10%;
-    margin-top: 5%;
-    width: 30%;
-    height: 12%;
-    border-radius: 0.8em;
-}
-
-p {
-
-    text-align: justify;
-    line-height: 150%;
-
-}
-
-h2 {
-
-    text-align: center;
-
-}
-
-h3 {
-    font-size: 3em;
-}
-
-/*Monika Musak - koniec*/
