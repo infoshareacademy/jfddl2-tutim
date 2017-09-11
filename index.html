@@ -12,7 +12,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
-
 </head>
 <body>
 
@@ -116,12 +115,23 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 img"><img src="images/fitstyle-aplikacja.png"></div>
                 <div class="col-xs-10 col-sm-4 col-md-4 col-lg-4 iconfit-r"><div class="row">
                     <div class="col-xs-2 col-sm-4 col-md-4 col-lg-4">
+
                         <div class="iconfita">
                             <div class="icon-line">
-                                <div class="tescik"><img src="images/icon4.svg" class="fourththicon"></div>
-                                <div class="tescik"><img src="images/icon5.svg" class="five-icon"></div>
-                                <div class="tescik"><img src="images/icon6.svg" class="six-icon"> </div></div><div class="kropki"></div>
-                        </div></div>
+                                <div class="iconwrap">
+                                    <img src="images/icon4.svg" class="fourththicon">
+                                </div>
+                                <div class="iconwrap2 iconline">
+                                    <img src="images/icon5.svg" class="five-icon">
+                                </div>
+                                <div class="iconwrap3">
+                                    <img src="images/icon6.svg" class="six-icon">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
 
                     <div class="col-xs-10 col-sm-8 col-md-8 col-lg-8">
                         <div class="row"><div class="iconfitd"><h3>Wyróżnik 4</h3>
@@ -358,6 +368,24 @@
     $(document).ready(function () {
         $('.match-product-description').matchHeight();
     });
+
+    function checkScroll(){
+        var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+        if($(window).scrollTop() > startY){
+            $('.navbar').addClass("scrolled");
+        }else{
+            $('.navbar').removeClass("scrolled");
+        }
+    }
+
+    if($('.navbar').length > 0){
+        $(window).on("scroll load resize", function(){
+            checkScroll();
+        });
+    }
+
+
 </script>
 
 <script src="https://use.fontawesome.com/1279572723.js"></script>
