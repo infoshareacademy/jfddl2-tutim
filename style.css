@@ -69,6 +69,7 @@ ul li:hover::after {
     background-color:white;
     margin-top: 300px;
     box-shadow: 1px 1px 1px 1px lightslategray;
+    margin-rigth: 500px;
 }
 #formMain label{
     display: block;
@@ -107,7 +108,7 @@ ul li:hover::after {
 h6#linkform a {
     position: absolute;
     top: 600px;
-    right: 100px;
+    right: 150px;
     font-family: "Montserrat", sans-serif;
     font-size: 2em;
     cursor: pointer;
@@ -166,7 +167,7 @@ h6#linkform a:hover::after{
     h6#linkform a {
         position: absolute;
         top: 600px;
-        right: 100px;
+        right: 150px;
         font-family: "Montserrat", sans-serif;
         font-size: 2em;
         cursor: pointer;
@@ -209,10 +210,10 @@ h6#linkform a:hover::after{
 
     h6#linkform a{
         position:absolute;
-        top: 600px;
-        right: 100px;
+        top: 550px;
+        right: 10.5em;
         font-family: "Montserrat", sans-serif;
-        font-size: 1.6em;
+        font-size: 3em;
         cursor: pointer;
         color: white;
         text-decoration: none;
@@ -227,7 +228,7 @@ h6#linkform a:hover::after{
         font-size: 3em;
         position: absolute;
         top: 220px;
-        right: 240px;
+        right: 8.5em;
         cursor: pointer;
 
     }
