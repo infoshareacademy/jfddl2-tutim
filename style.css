@@ -854,40 +854,45 @@ h3 {
     background-size: cover;
     font-family: Montserrat;
     color: #D9D9D9;
-    height: 400px;
+    height: 250px;
 }
 .grey{
-    height: 200px;
+    height: 120px;
 }
 
 .black{
     background-color: black;
-    height: 100px;
+    height: 60px;
     max-width: 101.2%;
+    padding-top: 20px;
 }
 
 .end{
     background-image: url('images/tlo2_02.jpg');
     max-width: 101.2%;
+
 }
 
 .logo{
-    height: 200px;
-    position: relative;
+    padding-top: 50px;
+    /*height: 200px;*/
+    /*position: relative;*/
+
 }
 
 .imgM{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    /*width: 100%;*/
-    /*height: 100%;*/
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*!*width: 100%;*!*/
+    /*!*height: 100%;*!*/
 }
 
 .copyright{
     height: 200px;
     position: relative;
+    padding-left: 15px;
 }
 
 .tutim {
@@ -908,54 +913,61 @@ h3 {
 .media{
     height: 200px;
     position: relative;
+    margin-top: 0;
 }
 
-.smallmedia {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100px;
-}
+/*.smallmedia {*/
+    /*!*position: absolute;*!*/
+    /*!*left: 50%;*!*/
+    /*!*top: 50%;*!*/
+    /*!*transform: translate(-50%, -50%);*!*/
+    /*!*width: 100%;*!*/
+    /*!*height: 100px;*!*/
+/*!*}*!*/
 
 .contact{
     height: 200px;
     position: relative;
 }
 
-.mailphone {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100px;
+/*.mailphone {*/
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*width: 100%;*/
+    /*height: 100px;*/
+/*}*/
+
+.row black{
+    font-family: 'Montserrat';
+    font-size: 0.8em;
 }
 
 .media a{
     text-decoration: none;
     color: white;
-    font-size: 1.5em;
+    /*font-size: 1.5em;*/
 }
 
 .contact .mailphone .mail a{
     text-decoration: none;
     color: #D9D9D9;
-    font-size: 1.5em;
+    /*font-size: 1.5em;*/
 
 }
 
 .contact .mailphone .mail i {
     text-decoration: none;
     color: white;
-    font-size: 1em;
+    /*font-size: 1em;*/
     text-align: center;
 }
 
 .contact .mailphone .phone{
     color: #D9D9D9;
-    font-size: 1.5em;
+    /*font-size: 1.5em;*/
+    font-family: 'Montserrat'
 }
 
 .contact .mailphone .phone i{
@@ -964,12 +976,18 @@ h3 {
 
 .copyright{
     color:white;
-    font-size: 1,5em;
+    /*font-size: 1.5em;*/
 }
 
-.more .form-inline{
-
+.copyright p{
+    padding-left: 15px;
+    color:#D9D9D9;
+    /*font-size: 1.5em;*/
 }
+.copyright p strong{
+    color:white;
+}
+
 
 .more h2{
     padding-bottom: 50px;
