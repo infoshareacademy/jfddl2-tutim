@@ -11,11 +11,32 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+    window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#191919",
+                    "text": "#git bfbfbf"
+                },
+                "button": {
+                    "background": "transparent",
+                    "text": "#adc43e",
+                    "border": "#adc43e"
+                }
+            },
+            "showLink": false,
+            "content": {
+                "message": "Portal i aplikacja Fitstyle wykorzystuje pliki cookies do poprawnego działania. ",
+                "dismiss": "Akceptuję"
+            }
+        })});
+</script>
 <!--Piotr Iwańczuk - start-->
 
 <div id="mainSite">
@@ -116,12 +137,23 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 img"><img src="images/fitstyle-aplikacja.png"></div>
                 <div class="col-xs-10 col-sm-4 col-md-4 col-lg-4 iconfit-r"><div class="row">
                     <div class="col-xs-2 col-sm-4 col-md-4 col-lg-4">
+
                         <div class="iconfita">
                             <div class="icon-line">
-                                <div class="tescik"><img src="images/icon4.svg" class="fourththicon"></div>
-                                <div class="tescik"><img src="images/icon5.svg" class="five-icon"></div>
-                                <div class="tescik"><img src="images/icon6.svg" class="six-icon"> </div></div><div class="kropki"></div>
-                        </div></div>
+                                <div class="iconwrap">
+                                    <img src="images/icon4.svg" class="fourththicon">
+                                </div>
+                                <div class="iconwrap2 iconline">
+                                    <img src="images/icon5.svg" class="five-icon">
+                                </div>
+                                <div class="iconwrap3">
+                                    <img src="images/icon6.svg" class="six-icon">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
 
                     <div class="col-xs-10 col-sm-8 col-md-8 col-lg-8">
                         <div class="row"><div class="iconfitd"><h3>Wyróżnik 4</h3>
@@ -337,28 +369,28 @@
 </div>
 
 <!--Maria Mioduska - koniec-->
-
-
 <script>
+    $("#nav ul li a[href^='#']").on('click', function(e) {
 
-    $(document).ready(function(){
-        var scroll_start = 0;
-        var startchange = $('#startchange');
-        var offset = startchange.offset();
-        $(document).scroll(function() {
-            scroll_start = $(this).scrollTop();
-            if(scroll_start > offset.top) {
-                $('.under').css('background-color', '#234');
-            } else {
-                $('.under').css('background-color', '#234');
-            }
+        // prevent default anchor click behavior
+        e.preventDefault();
+
+        // store hash
+        var hash = this.hash;
+
+        // animate
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 300, function(){
+
+            // when done, add hash to url
+            // (default click behaviour)
+            window.location.hash = hash;
         });
-    });
 
-    $(document).ready(function () {
-        $('.match-product-description').matchHeight();
     });
 </script>
+
 
 <script src="https://use.fontawesome.com/1279572723.js"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
