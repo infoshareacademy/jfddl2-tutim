@@ -11,11 +11,11 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-<<<<<<< HEAD
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-=======
 
->>>>>>> f560bb87498921cb02451a9536f4bc27d221851d
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
 </head>
 <body>
 <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
@@ -307,10 +307,6 @@
             </div>
             <div class="more col-xs-12 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-sm-4  col-md-4 col-lg-4">
                 <h2>Dowiedz się więcej</h2>
-                <!--<form action="/action_page.php">-->
-                <!--<input type="email" name="firstname" value="Podaj swój adres e mail ...">-->
-                <!--<input type="submit" value="Wyślij">-->
-                <!--</form>-->
                 <form class="form-inline">
                     <div class="form-group">
                         <label for="exampleInputEmail2">Email</label>
@@ -328,7 +324,7 @@
 
         <div class="copyright  col-xs-12 col-sm-4 col-md-4 col-lg-4">
 
-            <h4 class="tutim"> &copy; <strong> tuTIM </strong>2017. Wszystkie prawa zastrzeżone.</h4>
+            <p>&copy <strong> tuTIM </strong>2017. Wszystkie prawa zastrzeżone.</p>
         </div>
 
 
@@ -356,11 +352,11 @@
             <div class="row mailphone">
                 <div class="mail col-xs-12 col-sm-7 col-md-7 col-lg-7">
                     <a href="mailto:kontakt@fitstyle.pl.com?Subject=Hello" target="_top"><i
-                            class="fa fa-envelope" aria-hidden="true"></i>kontakt@fitstyle.pl</a>
+                            class="fa fa-envelope" aria-hidden="true"></i>&nbsp;kontakt@fitstyle.pl</a>
                 </div>
 
                 <div class="phone col-xs-12 col-sm-5 col-md-5 col-lg-5">
-                    <span><i class="fa fa-phone" aria-hidden="true"></i>81 525 00 71</span>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;81 525 00 71</span>
                 </div>
             </div>
         </div>
@@ -373,31 +369,8 @@
 </div>
 
 <!--Maria Mioduska - koniec-->
-<script>
-    $("#nav ul li a[href^='#']").on('click', function(e) {
 
-        // prevent default anchor click behavior
-        e.preventDefault();
 
-<<<<<<< HEAD
-        // store hash
-        var hash = this.hash;
-
-        // animate
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 300, function(){
-
-            // when done, add hash to url
-            // (default click behaviour)
-            window.location.hash = hash;
-        });
-
-    });
-</script>
-=======
-
->>>>>>> f560bb87498921cb02451a9536f4bc27d221851d
 
 
 <script src="https://use.fontawesome.com/1279572723.js"></script>
@@ -408,44 +381,32 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
-<!--<script>-->
-
-    <!--$(document).ready(function(){-->
-        <!--var scroll_start = 0;-->
-        <!--var startchange = $('#startchange');-->
-        <!--var offset = startchange.offset();-->
-        <!--$(document).scroll(function() {-->
-            <!--scroll_start = $(this).scrollTop();-->
-            <!--if(scroll_start > offset.top) {-->
-                <!--$('.under').css('background-color', '#234');-->
-            <!--} else {-->
-                <!--$('.under').css('background-color', '#234');-->
-            <!--}-->
-        <!--});-->
-    <!--});-->
-
-    <!--$(document).ready(function () {-->
-        <!--$('.match-product-description').matchHeight();-->
-    <!--});-->
-
-    <!--function checkScroll(){-->
-        <!--var startY = $('.navbar').height() * 2; //The point where the navbar changes in px-->
-
-        <!--if($(window).scrollTop() > startY){-->
-            <!--$('.navbar').addClass("scrolled");-->
-        <!--}else{-->
-            <!--$('.navbar').removeClass("scrolled");-->
-        <!--}-->
-    <!--}-->
-
-    <!--if($('.navbar').length > 0){-->
-        <!--$(window).on("scroll load resize", function(){-->
-            <!--checkScroll();-->
-        <!--});-->
-    <!--}-->
 
 
-<!--</script>-->
+<button onclick="topFunction()" id="backToTop" title="Back to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll= function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("backToTop").style.display = "block";
+        } else {
+            document.getElementById("backToTop").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+
+
+
+</script>
 
 </body>
 </html>
