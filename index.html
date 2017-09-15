@@ -55,10 +55,10 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right ">
-                    <li><a href="#mainSite">Strona główna</a></li>
-                    <li><a href="#midSec">O produkcie</a></li>
-                    <li><a href="#about" class="contactLink">Zespół</a></li>
-                    <li><a href="#siteEnd">Kontakt</a></li>
+                    <li><a href="#mainSite" class="move">Strona główna</a></li>
+                    <li><a href="#midSec" class="move">O produkcie</a></li>
+                    <li><a href="#about" class="contactLink move">Zespół</a></li>
+                    <li><a href="#siteEnd" class="move">Kontakt</a></li>
                     <li><a href="#"><img src="images/if_United-Kingdom_92403.png" class="flag"></a></li>
                     <li><a href="#"><img src="images/if_Poland_92289.png" class="flag"></a></li>
                 </ul>
@@ -184,7 +184,7 @@
 
 <!--Jakub Makarczuk - koniec-->
 <!--Monika Musak - start-->
-<div id="about">
+<div>
 
     <div class="container-fluid">
         <div class="row">
@@ -234,7 +234,7 @@
                         postępów.
                     </p>
 
-                    <p>Jak zacząć? To bardzo proste! Najpierw zarejestruj się na naszej stronie i odpowiedz na kilka pytań
+                    <p id="about">Jak zacząć? To bardzo proste! Najpierw zarejestruj się na naszej stronie i odpowiedz na kilka pytań
                         odnośnie Twojego stylu życia, sposobu odżywiana, aktywności fizycznej etc. Po przeanalizowaniu tych
                         informacji, na Twoim profilu pojawią się spersonalizowane dane, które pomogą odmienić Twoje życie.
                     </p>
@@ -250,7 +250,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="banner-img col-xs-12 col-sm-12 col-md-12">
-                <h3><b>twórcy fitstyle</b></h3>
+                <h3 ><b>twórcy fitstyle</b></h3>
             </div>
         </div>
     </div>
@@ -404,6 +404,13 @@
     }
 
 
+
+    $('.move').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 500);
+        return false;
+    });
 
 
 </script>
