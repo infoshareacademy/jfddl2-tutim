@@ -23,17 +23,26 @@ body{
     }
 }
 
-div.food-item {
-    width: 50px;
-    height: 50px;
-    border-radius: 20px;
+
+div.ground-item {
+    width: 64px;
+    height: 64px;
     position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+div.food-item {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
 div.food-item.hamburger{
-    background-image: url('images/hamburger (1).png');
+    background-image: url('images/hamburger.png');
 }
 
 div.food-item.soda{
@@ -44,3 +53,28 @@ div.food-item.fries{
     background-image: url('images/french-fries.png');
 }
 
+div.ground-item.car{
+    background-image: url('images/car.png');
+}
+
+div.ground-item.car1{
+    background-image: url('images/car (1).png');
+}
+
+div.ground-item.fence{
+    background-image: url('images/picket.png');
+}
+
+div.ground-item.bicycle{
+    background-image: url('images/bicycle.png');
+}
+
+div.ground-item.bucket{
+    background-image: url('images/bucket.png');
+}
+@media only screen and (max-width: 1366px){
+    #moving-bg{
+        width: 800px;
+        height: 550px;}
+
+}
