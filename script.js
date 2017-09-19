@@ -26,25 +26,6 @@ function moveLeft(element, distance) {
     moveRight(element, -distance);
 }
 
-function moveBottom(element, distance) {
-    changeElementPosition(element, 0, distance);
-}
-
-function moveTop(element, distance) {
-    moveBottom(element, -distance);
-}
-
-document.addEventListener('keydown', function (event) {
-    if (event.code === "ArrowRight") {
-        moveRight(div, 50);
-    } if (event.code === "ArrowLeft") {
-        moveLeft(div, 50);
-    } if (event.code === "ArrowUp") {
-        moveTop(div, 50);
-    } if (event.code === "ArrowDown") {
-        moveBottom(div, 50);
-    }
-});
 
 function animateRight(element) {
     return animate(element, 'right');
@@ -66,8 +47,8 @@ function animate(element, direction) {
     var moveFunction = window[functionName];
 
     var interval = setInterval(function () {
-        moveFunction(element, 5);
-        if (isOutOfViewport(element)) {
+        moveFunction(element, 6);
+        if (isOutOfGameBoard(element)) {
             clearInterval(interval);
             element.remove();
         }
@@ -96,25 +77,38 @@ function isOutOfViewport(element) {
         return true;
     return false;
 }
-
+// function isOutOfGameBoard(element) {
+//     var position = getElementPosition(element);
+//     if (position.x > board.innerWidth)
+//         return false;
+//     if (position.x < - element.offsetWidth)
+//         return false;
+//     if (position.y < 0 - element.offsetHeight)
+//         return false;
+//     if (position.y > board.innerHeight)
+//         return true;
+//     return false;
+// }
 
 
 var board = document.querySelector('#moving-bg');
 var boardW = Math.round(board.getBoundingClientRect().right);
 var boardH = Math.round(board.getBoundingClientRect().bottom);
-var offsetFromBottomOfBoard = 200;
+var offsetFromBottomOfBoard = 115;
+var offsetFromBottomOfBoard1 = 200;
 
 
-function generateDiv(className){
+
+
+function generateDiv1(className){
     var interval;
-    if (!className) className = 'hamburger';
-
+    if (!className) className = ['hamburger','fries', 'soda'];
     var div = document.createElement('div');
     div.className = 'food-item ';
-    div.className += className;
+    div.className += className[Math.floor(Math.random()*className.length)];
 
     var positionX = boardW;
-    var positionY = boardH - div.offsetHeight - offsetFromBottomOfBoard;
+    var positionY = boardH - div.offsetHeight - offsetFromBottomOfBoard1;
 
     div.style.left = positionX + 'px';
     div.style.top = positionY + 'px';
@@ -125,6 +119,23 @@ function generateDiv(className){
 
 
 }
+setInterval('generateDiv1()', 2000);
 
+function generateDiv2(className){
+    var interval;
+    if (!className) className = ['car','car1', 'fence', 'bicycle', 'bucket'];
+    var div = document.createElement('div');
+    div.className = 'ground-item ';
+    div.className += className[Math.floor(Math.random()*className.length)];
 
-setInterval('generateDiv()', 3500);
+    var positionX = boardW;
+    var positionY = boardH - div.offsetHeight - offsetFromBottomOfBoard;
+
+    div.style.left = positionX + 'px';
+    div.style.top = positionY + 'px';
+
+    board.appendChild(div);
+
+    animateLeft(div);}
+
+    setInterval('generateDiv2()',);
