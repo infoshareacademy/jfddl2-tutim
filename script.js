@@ -84,30 +84,19 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-// function isOutOfViewport(element) {
-//     var position = getElementPosition(element);
-//     if (position.x > window.innerWidth)
-//         return true;
-//     if (position.x < 0 - element.offsetWidth)
-//         return true;
-//     if (position.y < 0 - element.offsetHeight)
-//         return true;
-//     if (position.y > window.innerHeight)
-//         return true;
-//     return false;
-}
-function isOutOfGameBoard(element) {
+function isOutOfViewport(element) {
     var position = getElementPosition(element);
-    if (position.x > board.innerWidth)
+    if (position.x > window.innerWidth)
         return true;
-    if (position.x < - element.offsetWidth)
+    if (position.x < 0 - element.offsetWidth)
         return true;
     if (position.y < 0 - element.offsetHeight)
         return true;
-    if (position.y > board.innerHeight)
+    if (position.y > window.innerHeight)
         return true;
     return false;
 }
+
 
 
 var board = document.querySelector('#moving-bg');
@@ -137,5 +126,5 @@ function generateDiv1(className){
 }
 
 
-setInterval('generateDiv1()', 6000);
+setInterval('generateDiv1()', 2200);
 
