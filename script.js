@@ -102,16 +102,15 @@ function isOutOfViewport(element) {
 var board = document.querySelector('#moving-bg');
 var boardW = Math.round(board.getBoundingClientRect().right);
 var boardH = Math.round(board.getBoundingClientRect().bottom);
-var offsetFromBottomOfBoard = 200;
+var offsetFromBottomOfBoard = 250;
 
 
-function generateDiv(className){
+function generateDiv1(className){
     var interval;
-    if (!className) className = 'hamburger';
-
+    if (!className) className = ['hamburger','fries', 'soda'];
     var div = document.createElement('div');
     div.className = 'food-item ';
-    div.className += className;
+    div.className += className[Math.floor(Math.random()*className.length)];
 
     var positionX = boardW;
     var positionY = boardH - div.offsetHeight - offsetFromBottomOfBoard;
@@ -127,4 +126,5 @@ function generateDiv(className){
 }
 
 
-setInterval('generateDiv()', 3500);
+setInterval('generateDiv1()', 2200);
+

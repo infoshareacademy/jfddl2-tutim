@@ -4,10 +4,11 @@ body{
 }
 
 #moving-bg{
-    width: 700px;
-    height: 600px;
-    background: url('images/full-background.png') no-repeat;
+    width: 1000px;
+    height: 800px;
+    background: url('images/piotrek-tlo.jpg') no-repeat;
     background-position: 0 0;
+    background-size: cover;
     border: solid black;
     margin-left: 19%;
 
@@ -23,8 +24,8 @@ body{
 }
 
 div.food-item {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 20px;
     position: fixed;
     background-size: cover;
@@ -32,9 +33,14 @@ div.food-item {
 }
 
 div.food-item.hamburger{
-    background-image: url('images/hamburger.png');
+    background-image: url('images/hamburger (1).png');
 }
 
-div.food-item.pizza{
-    background-image: url('images/pizza.png');
+div.food-item.soda{
+    background-image: url('images/soda.png');
 }
+
+div.food-item.fries{
+    background-image: url('images/french-fries.png');
+}
+
