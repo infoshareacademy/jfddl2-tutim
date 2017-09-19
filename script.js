@@ -77,25 +77,25 @@ function isOutOfViewport(element) {
         return true;
     return false;
 }
-function isOutOfGameBoard(element) {
-    var position = getElementPosition(element);
-    if (position.x > board.innerWidth)
-        return false;
-    if (position.x < - element.offsetWidth)
-        return false;
-    if (position.y < 0 - element.offsetHeight)
-        return false;
-    if (position.y > board.innerHeight)
-        return true;
-    return false;
-}
+// function isOutOfGameBoard(element) {
+//     var position = getElementPosition(element);
+//     if (position.x > board.innerWidth)
+//         return false;
+//     if (position.x < - element.offsetWidth)
+//         return false;
+//     if (position.y < 0 - element.offsetHeight)
+//         return false;
+//     if (position.y > board.innerHeight)
+//         return true;
+//     return false;
+// }
 
 
 var board = document.querySelector('#moving-bg');
 var boardW = Math.round(board.getBoundingClientRect().right);
 var boardH = Math.round(board.getBoundingClientRect().bottom);
-var offsetFromBottomOfBoard = 140;
-var offsetFromBottomOfBoard1 = 300;
+var offsetFromBottomOfBoard = 115;
+var offsetFromBottomOfBoard1 = 200;
 
 
 
@@ -119,9 +119,7 @@ function generateDiv1(className){
 
 
 }
-
-
-setInterval('generateDiv1()', 200);
+setInterval('generateDiv1()', 2000);
 
 function generateDiv2(className){
     var interval;
@@ -140,4 +138,4 @@ function generateDiv2(className){
 
     animateLeft(div);}
 
-    setInterval('generateDiv2()',100);
+    setInterval('generateDiv2()',);
