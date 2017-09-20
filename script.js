@@ -138,4 +138,4 @@ function generateDiv2(className){
 
     animateLeft(div);}
 
-    setInterval('generateDiv2()',);
+    setInterval('generateDiv2()',4333);
