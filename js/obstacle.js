@@ -25,7 +25,7 @@ Obstacle.prototype.move = function () {
     // Dodac klase move na przeszkodzie
     setTimeout(function () {
         this
-    }, 100);
+    }, 1000);
     this.handle.addClass('move');
 };
 
