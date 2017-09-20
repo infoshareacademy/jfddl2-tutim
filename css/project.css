@@ -1,0 +1,200 @@
+body {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5vh 5vw;
+    height: 100vh;
+}
+
+#game {
+    background-image: url('../images/game-background.jpg');
+    background-size: 100% auto;
+    background-position: 0, 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    border: 3px solid black;
+    position: relative;
+    box-shadow: 2px 2px 2px 2px black;
+
+    animation: animatedBackground 5s linear infinite;
+}
+
+@keyframes animatedBackground {
+    from{
+        background-position: 0 0;
+    }
+    to{ background-position: 100% 0;
+    }
+}
+
+#stick {
+    height: 35vh;
+    background: url("../images/runner.gif");
+    width: 15vw;
+    position: absolute;
+    background-size: cover;
+    bottom: 5%;
+    left: 5%;
+    transition: all 0.25s ease-in;
+}
+
+/*#stick-jump {*/
+    /*height: 30vh;*/
+    /*background: url("../images/runner-jumo.gif");*/
+    /*width: 30vw;*/
+    /*position: absolute;*/
+    /*background-size: cover;*/
+    /*bottom: 5%;*/
+    /*left: 5%;*/
+    /*transition: all 0.25s ease-in;*/
+}
+
+#health {
+    padding: 2px 5px;
+    background: white;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.obstacle {
+    /*background: red;*/
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    right: 0%;
+    transition: all 2s linear;
+}
+
+#stick.crouch {
+    animation: crouch 3s linear;
+    background: url('../images/crouch.gif') no-repeat;
+    width: 15vw;
+}
+
+#stick.jump {
+    animation: jump 1s linear;
+    background: url("../images/runner-jumo.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15vw;
+}
+
+.obstacle.move {
+    right: 100%;
+}
+
+.obstacle.low {
+    bottom: 12%;
+}
+
+.obstacle.high {
+    bottom: 30%;
+    background: yellow;
+}
+
+.obstacle.pizza{
+    background: url('../images/pizza.png');
+    background-repeat: no-repeat;
+    bottom:30%;
+}
+
+.obstacle.hamburger{
+    background: url('../images/hamburger.png');
+    bottom:30%;
+    background-repeat: no-repeat;
+}
+
+.obstacle.soda{
+    background: url('../images/soda.png');
+    bottom:30%;
+    background-repeat: no-repeat;
+}
+
+.obstacle.fries{
+    background: url('../images/french-fries.png');
+    bottom:30%;
+    background-repeat: no-repeat;
+}
+
+.obstacle.car{
+    background: url('../images/car.png');
+    bottom:12%;
+    background-repeat: no-repeat;
+}
+
+.obstacle.car1{
+    background: url('../images/car (1).png');
+    bottom:12%;
+    background-repeat: no-repeat;
+}
+
+.obstacle.picket{
+    background: url('../images/picket.png');
+    bottom:12%;
+    background-repeat: no-repeat;
+}
+
+.obstacle.bucket{
+    background: url('../images/bucket.png');
+    bottom:12%;
+    background-repeat: no-repeat;
+}
+.obstacle.bicycle{
+    background: url('../images/bicycle.png');
+    bottom:12%;
+    background-repeat: no-repeat;
+}
+
+#game.hard .obstacle {
+    transition: all 4s linear;
+}
+
+#game.hard #stick.crouch {
+    animation: crouch 1s linear;
+}
+
+@-webkit-keyframes jump {
+    0%   { bottom: 5%; height: 30vh; }
+    50%   { bottom: 40%; height: 10vh; }
+    100%    { bottom: 5%; height: 30vh; }
+}
+@-moz-keyframes jump {
+    0%   { bottom: 5%; height: 30vh; }
+    50%   { bottom: 40%; height: 10vh; }
+    100%    { bottom: 5%; height: 30vh; }
+}
+@-o-keyframes jump {
+    0%   { bottom: 5%; height: 30vh; }
+    50%   { bottom: 40%; height: 10vh; }
+    100%    { bottom: 5%; height: 30vh; }
+}
+@keyframes jump {
+    0%   { bottom: 5%; height: 30vh; }
+    50%   { bottom: 40%; height: 10vh; }
+    100%    { bottom: 5%; height: 30vh; }
+}
+
+@-webkit-keyframes crouch {
+    0%   { height: 30vh; }
+    50%   { height: 15vh; }
+    100%   { height: 30vh; }
+}
+@-moz-keyframes crouch {
+    0%   { height: 30vh; }
+    50%   { height: 15vh; }
+    100%   { height: 30vh; }
+}
+@-o-keyframes crouch {
+    0%   { height: 30vh; }
+    50%   { height: 15vh; }
+    100%   { height: 30vh; }
+}
+@keyframes crouch {
+    0%   { height: 30vh; }
+    50%   { height: 15vh; }
+    100%   { height: 30vh; }
+}
