@@ -11,6 +11,7 @@ body {
 
     background-size: cover;
     height: 715px;
+    overflow:hidden;
 }
 
 
@@ -788,12 +789,7 @@ h1 {
 
     }
 
-.div.carousel123{
 
-
-
-    height: 715px;
-}
 
     p.paragraphs {
 
@@ -801,7 +797,7 @@ h1 {
 
     }
 
-}
+
 
 @media screen and (max-width: 768px) {
     h3 {
@@ -890,6 +886,10 @@ h3 {
     font-weight: bold;
 }
 
+    .container-carousel{
+
+        height: 715px;
+    }
 
 .klik {
 
