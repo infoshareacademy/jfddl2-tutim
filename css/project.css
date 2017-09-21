@@ -1,0 +1,56 @@
+body {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5vh 5vw;
+    height: 100vh;
+}
+
+#game {
+    background-image: url('../images/game-background.jpg');
+    background-size: 100% auto;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+}
+
+#stick {
+    height: 30vh;
+    background: blue;
+    width: 5%;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    transition: all 0.25s ease-in;
+}
+
+#health {
+    padding: 2px 5px;
+    background: white;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.obstacle {
+    background: red;
+    height: 5%;
+    width: 5%;
+    position: absolute;
+    right: 0%;
+    transition: all 8s linear;
+}
+
+.obstacle.move {
+    right: 100%;
+}
+
+.obstacle.low {
+    bottom: 10%;
+}
+
+.obstacle.high {
+    bottom: 60%;
+    background: yellow;
+}
