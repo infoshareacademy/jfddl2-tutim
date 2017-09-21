@@ -1,7 +1,13 @@
+
+
+
+
+
 function Stick() {
     this.health = 3;
     this.handle;
     this.handleHealth;
+    this.score = 0;
     this.moved = false;
     var _position = {
         x1: 0,
@@ -14,29 +20,49 @@ function Stick() {
 // Inicjalizacja naszego czlowieka
 Stick.prototype.init = function () {
     // Dodanie elementu DOM do przestrzeni gry
-    $('#game').append('<div id="stick" class="init"></div>');
-    $('#game').append('<div id="health"><span class="glyphicon glyphicon-heart"></span>' + this.getHealth() + '</div>');
+    $('#game-play').append('<div id="stick" class="init"></div>');
+
+    $('#game-play').append('<div id="score"><span class="glyphicon glyphicon-calendar"></span>' + this.getScore() + '</div>');
+    $('#game-play').append('<div id="health"><span class="glyphicon glyphicon-heart"></span>' + this.getHealth() + '</div>');
     this.handle = $('#stick');
     this.handleHealth = $('#health');
+    var self = this;
+    setInterval(function(){
+        self.score = self.score + 1;
+        self.updateScore();
+    }, 1000);
 };
+
+
 
 Stick.prototype.getHealth = function () {
     return this.health;
 };
+
+
+Stick.prototype.getScore = function () {
+    return this.score;
+};
+
+
 
 // Odjecie jednego zycia z sticka
 Stick.prototype.removeHp = function () {
     this.health = this.health - 1;
     this.updateHp();
     if (this.health <= 0) {
-        // $('#game').remove();
+        // $('#game-play').remove();
         console.log('@TODO: GAME OVER');
     }
 };
 
 // Aktualizja ilosci HP na ekranie
 Stick.prototype.updateHp = function () {
-    $(this.handleHealth).html('<span class="glyphicon glyphicon-heart"></span>' + this.getHealth());
+    $(this.handleHealth).html('<span class="glyphicon glyphicon-heart"></span> ' + this.getHealth());
+};
+
+Stick.prototype.updateScore = function () {
+    $('#score').html('<span class="glyphicon glyphicon-calendar"></span> ' + this.getScore());
 };
 
 // Unikanie przeszkody (kucanie)

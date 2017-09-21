@@ -8,10 +8,10 @@ $(document).ready(function () {
     // stick.crouch();
 
     // Tworzymy co 500ms przeszkody
-    createObstacles(5000, stick);
+    createObstacles(100, stick);
 
     setTimeout(function () {
-        $('#game').addClass('hard');
+        $('#game-play').addClass('hard');
     }, 500000);
 });
 
@@ -21,7 +21,7 @@ function createObstacles(speed, stick) {
         o.init();
         setTimeout(function () {
             o.move();
-        }, 50);
+        }, 100);
 
         setInterval(function () {
             if (o.collide(stick)) {

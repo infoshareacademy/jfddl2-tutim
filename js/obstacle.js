@@ -16,8 +16,8 @@ Obstacle.prototype.init = function () {
     // Losujemy liczbe z zakresu kluczy w tablicy obstacles
     var random = Math.floor(Math.random() * obstacles.length);
 
-    $('#game').append('<div class="obstacle ' + obstacles[random] + '"></div>');
-    this.handle = $('#game .obstacle:last-child');
+    $('#game-play').append('<div class="obstacle ' + obstacles[random] + '"></div>');
+    this.handle = $('#game-play .obstacle:last-child');
 };
 
 Obstacle.prototype.move = function () {
@@ -25,7 +25,7 @@ Obstacle.prototype.move = function () {
     // Dodac klase move na przeszkodzie
     setTimeout(function () {
         this
-    }, 1000);
+    }, 50);
     this.handle.addClass('move');
 };
 

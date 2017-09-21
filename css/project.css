@@ -6,7 +6,7 @@ body {
     height: 100vh;
 }
 
-#game {
+#game-play {
     background-image: url('../images/game-background.jpg');
     background-size: 100% auto;
     background-position: 0, 0;
@@ -32,13 +32,14 @@ body {
 
 #stick {
     height: 30vh;
-    background: url("../images/runner.gif");
-    width: 15vw;
+    background-image: url("../images/runner.gif");
+    width: 10vw;
     position: absolute;
     background-size: cover;
     bottom: 5%;
     left: 5%;
-    transition: all 0.25s ease-in;
+    transition: all 0.01s ease-in;
+
 }
 
 /*#stick-jump {*/
@@ -72,7 +73,7 @@ body {
 #stick.crouch {
     animation: crouch 3s linear;
     background: url('../images/crouch.gif') no-repeat;
-    width: 15vw;
+    width: 10vw;
 }
 
 #stick.jump {
@@ -80,7 +81,7 @@ body {
     /*background: url("../images/runner-jumo.gif");*/
     background-repeat: no-repeat;
     background-size: cover;
-    width: 15vw;
+    width: 10vw;
 }
 
 .obstacle.move {
@@ -173,28 +174,28 @@ body {
     100%    { bottom: 5%; height: 30vh; }
 }
 @keyframes jump {
-    0%   { bottom: 5%; height: 30vh; }
-    50%   { bottom: 40%; height: 10vh; }
+    0%   { bottom: 0%; height: 30vh; }
+    50%   { bottom: 5%; height: 10vh; }
     100%    { bottom: 5%; height: 30vh; }
 }
 
 @-webkit-keyframes crouch {
-    0%   { height: 30vh; }
-    50%   { height: 15vh; }
-    100%   { height: 30vh; }
+    0%   { height: 5vh; }
+    50%   { height: 5vh; }
+    100%   { height: 5vh; }
 }
 @-moz-keyframes crouch {
-    0%   { height: 30vh; }
-    50%   { height: 15vh; }
-    100%   { height: 30vh; }
+    0%   { height: 5vh; }
+    50%   { height: 5vh; }
+    100%   { height: 5vh; }
 }
 @-o-keyframes crouch {
-    0%   { height: 30vh; }
-    50%   { height: 15vh; }
-    100%   { height: 30vh; }
+    0%   { height: 5vh; }
+    50%   { height: 5vh; }
+    100%   { height: 5vh; }
 }
 @keyframes crouch {
-    0%   { height: 30vh; }
-    50%   { height: 15vh; }
-    100%   { height: 30vh; }
+    0%   { height: 20vh; }
+    50%   { height: 20vh; }
+    100%   { height: 50vh; }
 }
