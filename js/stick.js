@@ -1,8 +1,3 @@
-
-
-
-
-
 function Stick() {
     this.health = 3;
     this.handle;
@@ -27,32 +22,33 @@ Stick.prototype.init = function () {
     this.handle = $('#stick');
     this.handleHealth = $('#health');
     var self = this;
-    setInterval(function(){
+    this.interval = setInterval(function(){
         self.score = self.score + 1;
         self.updateScore();
     }, 1000);
 };
 
-
-
 Stick.prototype.getHealth = function () {
     return this.health;
 };
-
 
 Stick.prototype.getScore = function () {
     return this.score;
 };
 
-
-
 // Odjecie jednego zycia z sticka
 Stick.prototype.removeHp = function () {
-    this.health = this.health - 1;
-    this.updateHp();
-    if (this.health <= 0) {
+    var health = this.health -1;
+    if (health < 0) {
         // $('#game-play').remove();
         console.log('@TODO: GAME OVER');
+        clearInterval(this.interval);
+        $('#stick').remove();
+        $('#game-play').css('animation', 'none');
+    }
+    else {
+        this.health = health;
+        this.updateHp();
     }
 };
 

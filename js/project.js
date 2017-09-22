@@ -7,7 +7,7 @@ $(document).ready(function () {
     stick.init();
     // stick.crouch();
 
-    // Tworzymy co 500ms przeszkody
+    // Tworzymy co 100ms przeszkody
     createObstacles(100, stick);
 
     setTimeout(function () {
