@@ -75,6 +75,10 @@ body {
     animation: fall 1s linear;
 }
 
+#stick.rise {
+    animation: rise 1s linear;
+}
+
 .obstacle.move {
     right: 100%;
 }
@@ -192,6 +196,12 @@ body {
 }
 
 @keyframes fall {
+    0%   { bottom: 40%; height: 30vh; }
+    50%   { bottom: 20%; height: 30vh; }
+    100%    { bottom: 0%; height: 30vh; }
+}
+
+@keyframes rise {
     0%   { bottom: 40%; height: 30vh; }
     50%   { bottom: 20%; height: 30vh; }
     100%    { bottom: 0%; height: 30vh; }

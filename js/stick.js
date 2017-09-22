@@ -78,6 +78,18 @@ Stick.prototype.crouch = function () {
     }
 };
 
+
+Stick.prototype.crouch = function(){
+    var stick = $('#stick');
+    stick.addClass('crouch');
+    setTimeout(function(){
+        stick.removeClass('crouch');
+        stick.addClass('rise');
+    },1000);
+    stick.removeClass('rise');
+}
+
+
 // Unikanie przeszkody (skakanie)
 Stick.prototype.jump = function () {
     var stick = $('#stick');
