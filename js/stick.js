@@ -41,6 +41,7 @@ Stick.prototype.removeHp = function () {
     var health = this.health -1;
     if (health < 0) {
         // $('#game-play').remove();
+        clearInterval(intervalID);
         console.log('@TODO: GAME OVER');
         clearInterval(this.interval);
         $('#stick').remove();

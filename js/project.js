@@ -1,4 +1,5 @@
 var stick;
+var intervalID;
 
 $(document).ready(function () {
     // Inicjalizujemy ludzika
@@ -16,7 +17,7 @@ $(document).ready(function () {
 });
 
 function createObstacles(speed, stick) {
-    setInterval(function () {
+    intervalID = setInterval(function () {
         var o = new Obstacle();
         o.init();
         setTimeout(function () {
