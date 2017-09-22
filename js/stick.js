@@ -80,11 +80,13 @@ Stick.prototype.crouch = function () {
 
 // Unikanie przeszkody (skakanie)
 Stick.prototype.jump = function () {
-    $('#stick').addClass('jump');
-
+    var stick = $('#stick');
+    stick.addClass('jump');
     setTimeout(function () {
-        $('#stick').removeClass('jump');
-    }, 3000);
+        stick.removeClass('jump');
+        stick.addClass('fall');
+    }, 1000);
+    stick.removeClass('fall');
 };
 
 Stick.prototype.getCoordinates = function () {

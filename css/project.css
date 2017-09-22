@@ -33,25 +33,16 @@ body {
 #stick {
     height: 30vh;
     background-image: url("../images/runner.gif");
-    width: 10vw;
+    width: 20vw;
     position: absolute;
     background-size: cover;
     bottom: 5%;
-    left: 5%;
-    transition: all 0.01s ease-in;
+    left: 7%;
+    transition: all 0.5s ease-in;
 
 }
 
-/*#stick-jump {*/
-    /*height: 30vh;*/
-    /*background: url("../images/runner-jumo.gif");*/
-    /*width: 30vw;*/
-    /*position: absolute;*/
-    /*background-size: cover;*/
-    /*bottom: 5%;*/
-    /*left: 5%;*/
-    /*transition: all 0.25s ease-in;*/
-}
+
 
 #health {
     padding: 2px 5px;
@@ -62,7 +53,7 @@ body {
 }
 
 .obstacle {
-    /*background: red;*/
+
     height: 7%;
     width: 7%;
     position: absolute;
@@ -78,10 +69,10 @@ body {
 
 #stick.jump {
     animation: jump 1s linear;
-    /*background: url("../images/runner-jumo.gif");*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 10vw;
+}
+
+#stick.fall {
+    animation: fall 1s linear;
 }
 
 .obstacle.move {
@@ -89,7 +80,7 @@ body {
 }
 
 .obstacle.low {
-    bottom: 12%;
+    bottom: 11%;
 }
 
 .obstacle.high {
@@ -159,43 +150,49 @@ body {
 }
 
 @-webkit-keyframes jump {
-    0%   { bottom: 5%; height: 30vh; }
-    50%   { bottom: 40%; height: 10vh; }
-    100%    { bottom: 5%; height: 30vh; }
+    0%   { bottom: 5%; height: 0vh; }
+    50%   { bottom: 40%; height: 50vh; }
+    100%    { bottom: 5%; height: 80vh; }
 }
 @-moz-keyframes jump {
-    0%   { bottom: 5%; height: 30vh; }
-    50%   { bottom: 40%; height: 10vh; }
-    100%    { bottom: 5%; height: 30vh; }
+    0%   { bottom: 15%; height: 0vh; }
+    50%   { bottom: 20%; height: 50vh; }
+    100%    { bottom: 50%; height: 80vh; }
 }
 @-o-keyframes jump {
-    0%   { bottom: 5%; height: 30vh; }
-    50%   { bottom: 40%; height: 10vh; }
-    100%    { bottom: 5%; height: 30vh; }
+    0%   { bottom: 15%; height: 0vh; }
+    50%   { bottom: 20%; height: 50vh; }
+    100%    { bottom: 50%; height: 80vh; }
 }
 @keyframes jump {
     0%   { bottom: 0%; height: 30vh; }
-    50%   { bottom: 5%; height: 10vh; }
-    100%    { bottom: 5%; height: 30vh; }
+    50%   { bottom: 20%; height: 30vh; }
+    100%    { bottom: 40%; height: 30vh; }
 }
 
 @-webkit-keyframes crouch {
-    0%   { height: 5vh; }
+    0%   { height: 0vh; }
     50%   { height: 5vh; }
-    100%   { height: 5vh; }
+    100%   { height: 7vh; }
 }
 @-moz-keyframes crouch {
-    0%   { height: 5vh; }
+    0%   { height: 0vh; }
     50%   { height: 5vh; }
-    100%   { height: 5vh; }
+    100%   { height: 7vh; }
 }
 @-o-keyframes crouch {
-    0%   { height: 5vh; }
+    0%   { height: 0vh; }
     50%   { height: 5vh; }
-    100%   { height: 5vh; }
+    100%   { height: 7vh; }
 }
 @keyframes crouch {
-    0%   { height: 20vh; }
-    50%   { height: 20vh; }
-    100%   { height: 50vh; }
+    0%   { height: 0vh; }
+    50%   { height: 5vh; }
+    100%   { height: 7vh; }
+}
+
+@keyframes fall {
+    0%   { bottom: 40%; height: 30vh; }
+    50%   { bottom: 20%; height: 30vh; }
+    100%    { bottom: 0%; height: 30vh; }
 }
