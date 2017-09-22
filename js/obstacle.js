@@ -68,3 +68,5 @@ Obstacle.prototype.collide = function (stick) {
         throw new Error('Niepoprawny parametr');
     }
 };
+
+

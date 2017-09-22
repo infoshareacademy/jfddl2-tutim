@@ -7,8 +7,8 @@ $(document).ready(function () {
     stick.init();
     // stick.crouch();
 
-    // Tworzymy co 100ms przeszkody
-    createObstacles(100, stick);
+    // Tworzymy co 500ms przeszkody
+    createObstacles(2500, stick);
 
     setTimeout(function () {
         $('#game-play').addClass('hard');
@@ -28,7 +28,7 @@ function createObstacles(speed, stick) {
                 stick.removeHp();
             }
             // console.log('Koliduje: '+o.collide(stick));
-        }, 100);
+        }, 2000);
     }, speed);
 }
 
