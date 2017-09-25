@@ -384,3 +384,35 @@ display:none;
     -webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
     animation-delay: 1s;
 }
+
+@media only screen and (max-width: 1000px) {
+
+    .game-logo img {
+        position: absolute;
+        max-width: 70%;
+        left: 7%;
+        top: -5em;
+    }
+
+    .heading {
+        padding-top: 25vh;
+        padding-left: 0%;
+        transition-delay: 0.3ms;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 650px) {
+    .game-logo img {
+        position: absolute;
+        max-width: 80%;
+        left: 37%;
+        top: -1em;
+    }
+
+    .heading {
+        padding-top: 7vh;
+        padding-left: 2%;
+    }
+}
