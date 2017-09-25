@@ -48,7 +48,6 @@ display:none;
 
 .menu-header {
     position:relative;
-    background-color: #ffffff;
     max-width: 100%;
     max-height: 100%;
 
@@ -56,7 +55,6 @@ display:none;
 
 .menu-header img {
     position:relative;
-    background-color: #ffffff;
     max-width: 100%;
     max-height: 100%;
 
@@ -102,6 +100,7 @@ display:none;
     max-width:100%;
     max-height:100%;
     position: fixed;
+    z-index: -10;
 }
 
 .pusta {
@@ -400,8 +399,79 @@ display:none;
         transition-delay: 0.3ms;
     }
 
+    .button-menu {
+        font-size: 1.4em;
+    }
+
+    .game-buttons p {
+        font-size: 1.3em;
+    }
+
+    .menu-header h3 {
+        font-size: 3.5em;
+    }
+
+    .menu-header h1 {
+        font-size: 7em;
+        padding-top: 7%;
+    }
+
+    .button-menu:hover {
+        font-size: 1.4em;
+    }
+    .instruction h4 {
+        font-size: 2em;
+    }
+
+    .instruction p {
+        font-size: 1.2em;
+    }
 }
 
+    @media only screen and (max-width: 700px) {
+
+        .game-logo img {
+            position: absolute;
+            max-width: 70%;
+            left: 7%;
+            top: -5em;
+        }
+
+        .heading {
+            padding-top: 25vh;
+            padding-left: 0%;
+            transition-delay: 0.3ms;
+        }
+
+        .button-menu {
+            font-size: 1.2em;
+        }
+
+        .game-buttons p {
+            font-size: 1.1em;
+        }
+
+        .menu-header h3 {
+            font-size: 3.5em;
+        }
+
+        .menu-header h1 {
+            font-size: 7em;
+            padding-top: 7%;
+        }
+
+        .button-menu:hover {
+            font-size: 1.2em;
+
+        }
+        .instruction h4 {
+            font-size: 1.8em;
+        }
+
+        .instruction p {
+            font-size: 1.1em;
+        }
+    }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 650px) {
     .game-logo img {
@@ -414,5 +484,43 @@ display:none;
     .heading {
         padding-top: 7vh;
         padding-left: 2%;
+    }
+
+    .game-logo img {
+        position: absolute;
+        max-width: 70%;
+        left: 7%;
+        top: -5em;
+    }
+
+    .heading {
+        padding-top: 25vh;
+        transition-delay: 0.3ms;
+    }
+
+    .button-menu {
+        font-size: 1em;
+    }
+
+    .game-buttons p {
+        font-size: 1.1em;
+    }
+
+    .menu-header h3 {
+        font-size: 2.5em;
+    }
+
+    .menu-header h1 {
+        font-size: 4em;
+    }
+
+    .button-menu:hover {
+        font-size: 1em;
+
+    }
+    .left-image img {
+        opacity: 0.2;
+        transition: 0.5ms;
+
     }
 }
