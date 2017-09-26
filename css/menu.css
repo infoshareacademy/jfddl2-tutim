@@ -18,6 +18,10 @@
 display:none;
 }
 
+#game-menu-en {
+    display:none;
+}
+
 #game-instruction {
     display:none;
 }

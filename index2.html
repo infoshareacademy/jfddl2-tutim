@@ -92,6 +92,49 @@
 
     </div>
 </div>
+<div id="game-menu-en">
+
+
+    <div class="row">
+        <div class="col-xs-3">
+            <div class="left-image"><img src="images/tloL.jpg"></div>
+            ​
+        </div>
+        <div class="col-xs-6">
+            <div class="PUSTA">
+                <div class="game-menu-header">
+
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img src="images/runningbody.png" class="menu-header">
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="menu-header">
+                                <h1>fit</h1>
+                                <h3>runner</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="game-buttons">
+                <button class="button-menu hvr-shutter-in-vertical btn-block" id="playgame">Play the game</button>
+                <button class="button-menu hvr-shutter-in-vertical btn-block" id="gamerules">Game rules</button>
+                <button class="button-menu hvr-shutter-in-vertical btn-block" id="language-en">Switch to Polish</button>
+                <button class="button-menu hvr-shutter-in-vertical btn-block" id="goback">Go back </button>
+                <p>Fitstyle by tuTim</p>
+            </div>
+            ​
+        </div>
+        <div class="col-xs-3">
+            <div class="right-image"><img src="images/tlor.jpg"></div>
+            ​
+        </div>
+
+    </div>
+</div>
 <div id="game-instruction">
 
 
@@ -172,13 +215,13 @@
     });
 
     ////button go back inside instructions
-    $("#goback2").click(function () {
-        $("#game-instruction").fadeOut("slow", function () {
+    $("#language-en").click(function () {
+        $("#game-menu-en").fadeOut("slow", function () {
             $("#game-menu").fadeIn()
         });
     });
 
-    ////button go back in main menu
+        ////button go back in main menu
     $("#goback").click(function () {
         $("#game-menu").fadeOut("slow", function () {
             window.location.href = "index.html";
@@ -189,6 +232,19 @@
     $("#playgame").click(function () {
         $("#game-menu").fadeOut("slow", function () {
             window.location.href = "index3.html";
+        });
+    });
+
+    ////English version button
+    $("#language").click(function () {
+        $("#game-menu").fadeOut("slow", function () {
+            $("#game-menu-en").fadeIn()
+        });
+    });
+    ////English menu go back
+    $("#goback2").click(function () {
+        $("#game-instruction").fadeOut("slow", function () {
+            $("#game-menu").fadeIn()
         });
     });
 
