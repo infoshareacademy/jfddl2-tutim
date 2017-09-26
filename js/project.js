@@ -1,28 +1,46 @@
+var stick;
+var intervalID;
+
 $(document).ready(function () {
     // Inicjalizujemy ludzika
-    var stick = new Stick();
+    stick = new Stick();
     console.log(stick);
     stick.init();
     // stick.crouch();
 
     // Tworzymy co 500ms przeszkody
-    createObstacles(1500, stick);
+    createObstacles(2500, stick);
+
+    setTimeout(function () {
+        $('#game-play').addClass('hard');
+    }, 500000);
 });
 
 function createObstacles(speed, stick) {
-    setInterval(function () {
+    intervalID = setInterval(function () {
         var o = new Obstacle();
         o.init();
         setTimeout(function () {
             o.move();
-        }, 50);
-
-        setInterval(function() {
-            console.log(stick);
-            console.log('Koliduje: '+o.collide(stick));
         }, 100);
+
+        setInterval(function () {
+            if (o.collide(stick)) {
+                stick.removeHp();
+            }
+            // console.log('Koliduje: '+o.collide(stick));
+        }, 2000);
     }, speed);
 }
+
+document.addEventListener('keydown', function (event) {
+    if (event.code === 'ArrowDown') {
+        stick.crouch();
+    }
+    if (event.code === 'ArrowUp') {
+        stick.jump();
+    }
+});
 
 // Person.prototype.sayHello = function() {
 //     console.info('Witam ' + this.name);

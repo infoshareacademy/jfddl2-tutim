@@ -6,24 +6,43 @@ body {
     height: 100vh;
 }
 
-#game {
+#game-play {
     background-image: url('../images/game-background.jpg');
     background-size: 100% auto;
-    background-position: bottom center;
+    background-position: 0, 0;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    border: 3px solid black;
     position: relative;
+    box-shadow: 2px 2px 2px 2px black;
+
+    animation: animatedBackground 5s linear infinite;
+}
+
+@keyframes animatedBackground {
+    from{
+        background-position: 0 0;
+    }
+    to{ background-position: 100% 0;
+    }
 }
 
 #stick {
     height: 30vh;
-    background: blue;
-    width: 5%;
+    background-image: url("../images/runner.gif");
+    width: 20vw;
     position: absolute;
+    background-size: cover;
     bottom: 5%;
-    left: 5%;
-    transition: all 0.25s ease-in;
+    left: 7%;
+    transition: all 0.5s ease-in;
+
 }
+
+
 
 #health {
     padding: 2px 5px;
@@ -34,12 +53,30 @@ body {
 }
 
 .obstacle {
-    background: red;
-    height: 5%;
-    width: 5%;
+
+    height: 7%;
+    width: 7%;
     position: absolute;
     right: 0%;
-    transition: all 8s linear;
+    transition: all 5s linear;
+}
+
+#stick.crouch {
+    animation: crouch 3s linear;
+    background: url('../images/crouch.gif') no-repeat;
+    width: 10vw;
+}
+
+#stick.jump {
+    animation: jump 1s linear;
+}
+
+#stick.fall {
+    animation: fall 1s linear;
+}
+
+#stick.rise {
+    animation: rise 1s linear;
 }
 
 .obstacle.move {
@@ -47,10 +84,125 @@ body {
 }
 
 .obstacle.low {
-    bottom: 10%;
+    bottom: 11%;
 }
 
 .obstacle.high {
-    bottom: 60%;
+    bottom: 30%;
     background: yellow;
+}
+
+.obstacle.pizza{
+    background: url('../images/pizza.png');
+    background-repeat: no-repeat;
+    bottom:30%;
+}
+
+.obstacle.hamburger{
+    background: url('../images/hamburger.png');
+    bottom:30%;
+    background-repeat: no-repeat;
+}
+
+.obstacle.soda{
+    background: url('../images/soda.png');
+    bottom:30%;
+    background-repeat: no-repeat;
+}
+
+.obstacle.fries{
+    background: url('../images/french-fries.png');
+    bottom:30%;
+    background-repeat: no-repeat;
+}
+
+.obstacle.car{
+    background: url('../images/car.png');
+    bottom:12%;
+    background-repeat: no-repeat;
+}
+
+.obstacle.car1{
+    background: url('../images/car (1).png');
+    bottom:12%;
+    background-repeat: no-repeat;
+}
+
+.obstacle.picket{
+    background: url('../images/picket.png');
+    bottom:12%;
+    background-repeat: no-repeat;
+}
+
+.obstacle.bucket{
+    background: url('../images/bucket.png');
+    bottom:12%;
+    background-repeat: no-repeat;
+}
+.obstacle.bicycle{
+    background: url('../images/bicycle.png');
+    bottom:12%;
+    background-repeat: no-repeat;
+}
+
+#game.hard .obstacle {
+    transition: all 4s linear;
+}
+
+#game.hard #stick.crouch {
+    animation: crouch 1s linear;
+}
+
+@-webkit-keyframes jump {
+    0%   { bottom: 5%; height: 0vh; }
+    50%   { bottom: 40%; height: 50vh; }
+    100%    { bottom: 5%; height: 80vh; }
+}
+@-moz-keyframes jump {
+    0%   { bottom: 15%; height: 0vh; }
+    50%   { bottom: 20%; height: 50vh; }
+    100%    { bottom: 50%; height: 80vh; }
+}
+@-o-keyframes jump {
+    0%   { bottom: 15%; height: 0vh; }
+    50%   { bottom: 20%; height: 50vh; }
+    100%    { bottom: 50%; height: 80vh; }
+}
+@keyframes jump {
+    0%   { bottom: 0%; height: 30vh; }
+    50%   { bottom: 20%; height: 30vh; }
+    100%    { bottom: 40%; height: 30vh; }
+}
+
+@-webkit-keyframes crouch {
+    0%   { height: 0vh; }
+    50%   { height: 5vh; }
+    100%   { height: 7vh; }
+}
+@-moz-keyframes crouch {
+    0%   { height: 0vh; }
+    50%   { height: 5vh; }
+    100%   { height: 7vh; }
+}
+@-o-keyframes crouch {
+    0%   { height: 0vh; }
+    50%   { height: 5vh; }
+    100%   { height: 7vh; }
+}
+@keyframes crouch {
+    0%   { height: 0vh; }
+    50%   { height: 5vh; }
+    100%   { height: 7vh; }
+}
+
+@keyframes fall {
+    0%   { bottom: 40%; height: 30vh; }
+    50%   { bottom: 20%; height: 30vh; }
+    100%    { bottom: 0%; height: 30vh; }
+}
+
+@keyframes rise {
+    0%   { bottom: 40%; height: 30vh; }
+    50%   { bottom: 20%; height: 30vh; }
+    100%    { bottom: 0%; height: 30vh; }
 }

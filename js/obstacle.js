@@ -1,5 +1,6 @@
 function Obstacle() {
     this.handle;
+    this.collided = false;
     var _position = {
         x1: 0,
         y1: 0,
@@ -11,12 +12,12 @@ function Obstacle() {
 Obstacle.prototype.init = function () {
     // Dodanie elementu DOM do przestrzeni gry
     // @TODO: Losowanie obiektu
-    var obstacles = ['low', 'high'];
+    var obstacles = ['car','car1','bicycle','bucket','picket','hamburger','fries','pizza','soda'];
     // Losujemy liczbe z zakresu kluczy w tablicy obstacles
     var random = Math.floor(Math.random() * obstacles.length);
 
-    $('#game').append('<div class="obstacle ' + obstacles[random] + '"></div>');
-    this.handle = $('#game .obstacle:last-child');
+    $('#game-play').append('<div class="obstacle ' + obstacles[random] + '"></div>');
+    this.handle = $('#game-play .obstacle:last-child');
 };
 
 Obstacle.prototype.move = function () {
@@ -24,7 +25,7 @@ Obstacle.prototype.move = function () {
     // Dodac klase move na przeszkodzie
     setTimeout(function () {
         this
-    }, 100);
+    }, 50);
     this.handle.addClass('move');
 };
 
@@ -44,16 +45,28 @@ Obstacle.prototype.getCoordinates = function () {
 };
 
 Obstacle.prototype.collide = function (stick) {
-    console.log(stick);
     if (stick instanceof Stick) {
-        console.log('@TODO: Collide');
+        if (this.collided) {
+            return false;
+        }
+
         var coordinates = this.getCoordinates();
         var stickCoordinates = stick.getCoordinates();
-        console.log(coordinates);
-        console.log(stickCoordinates);
 
-        return 1;
+        if (coordinates.x1 <= stickCoordinates.x1 && stickCoordinates.y1 <= coordinates.y1 && coordinates.y1 <= stickCoordinates.y2) {
+            this.collided = true;
+            return true;
+        }
+
+        if (coordinates.x2 <= stickCoordinates.x2 && stickCoordinates.y1 <= coordinates.y2 && coordinates.y2 <= stickCoordinates.y2) {
+            this.collided = true;
+            return true;
+        }
+
+        return false;
     } else {
         throw new Error('Niepoprawny parametr');
     }
 };
+
+
