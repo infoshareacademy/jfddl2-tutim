@@ -112,8 +112,8 @@
                   method="POST">
                 <div class="form-group">
                     <label for="exampleInputEmail2">Podaj e-mail: </label>
-                    <input type="email" class="modal-input" id="formmail"
-                           placeholder="mail@gmail.com" name="mail klienta">
+
+                    <input type="email" pattern="[^ @]*@[^ @]*" placeholder="Podaj swój email" class="modal-input" id="formmail" name="mail klienta">
                 </div>
                 <button type="submit" class="btn-submit" id="formwrap">Wyślij</button>
                 <input type="hidden" name="_next" value="http://www.tutim.jfddl2.is-academy.pl/index2.html" />
