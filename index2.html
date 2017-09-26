@@ -32,7 +32,7 @@
                     <img src="images/running3.png" class="icon-game-logo2 element-animation delay1">
                     <img src="images/running4.png" class="icon-game-logo3 element-animation delay4">
                     <img src="images/running5.png" class="icon-game-logo4 element-animation delay3">
-                                      <!--<img src="images/running-12.png">-->
+                    <!--<img src="images/running-12.png">-->
                 </div>
                 ​
             </div>
@@ -123,7 +123,7 @@
                 <button class="button-menu hvr-shutter-in-vertical btn-block" id="playgame">Play the game</button>
                 <button class="button-menu hvr-shutter-in-vertical btn-block" id="gamerules">Game rules</button>
                 <button class="button-menu hvr-shutter-in-vertical btn-block" id="language-en">Switch to Polish</button>
-                <button class="button-menu hvr-shutter-in-vertical btn-block" id="goback">Go back </button>
+                <button class="button-menu hvr-shutter-in-vertical btn-block" id="goback-en">Go back</button>
                 <p>Fitstyle by tuTim</p>
             </div>
             ​
@@ -161,27 +161,39 @@
                 </div>
                 <div class="instruction">
                     <h4>Cel gry</h4>
-                    <P>Celem gry jest zdobycie jak największej liczby punktów przez gracza.&nbsp;</P>
+                    <p>Celem gry jest zdobycie jak największej liczby punktów. Gracz zdobywa punkty za czas , w którym
+                        utrzyma się w grze.</p>
 
-                    <h4>Działanie gry</h4>
+                    <h4> Działanie gry</h4>
                     <p>Gracz biegnie na planszy. Jego zadaniem jest unikanie pojawiających się przeszkód. Jeśli na
-                        swojej
-                        drodze napotka przeszkodę (płotek, wiadro, samochód), która znajduje się na powierzchni
-                        ziemii musi
-                        ją przeskoczyć. Natomiast jeśli do gracza zbliża się przedmiot, który leci w powietrzu
-                        (hamburger,
-                        pizza, frytki), musi się schylić, aby przedmiot w niego nie udeżył.</p>
+                        swojej drodze napotka przeszkodę (płotek, rower, wiadro, samochód), która znajduje się na
+                        powierzchni ziemi musi ją przeskoczyć. Natomiast jeśli do gracza zbliża się przedmiot, który
+                        leci w powietrzu (hamburger, pizza, frytki, cola), musi się schylić, aby przedmiot w niego nie
+                        uderzył.</p>
 
-                    <h4>Nawigacja w grze</h4>
-                    <p>Gracz posługuje się dwoma przyciskami. Strzałka do góry – służy do skoków, oraz strzała w dół
-                        –
+                    <h4> Nawigacja w grze</h4>
+                    <p> Gracz posługuje się dwoma przyciskami. Strzałka do góry – służy do skoków, oraz strzała w dół –
                         naciskając ją gracz schyla się.</p>
 
-                    <p>Gracz ma trzy życia, na planszy oznaczone jako serduszka. Po utracie życia, nie będzie się
-                        ono
-                        wywietlało na ekranie. Gra kończy się, gdy gracz straci wszystkie trzy życia.</p>
+                    <h4>Życia</h4>
+                    <p>Gracz ma trzy życia, na planszy oznaczone jako serduszka w lewym górnym roku planszy gry. Gdy
+                        gracz nie przeskoczy przez przeszkodę lub nie uchyli się pod zbliżającą się przeszkodą traci
+                        życie (jedno za każde zderzenie z przeszkodą). Gra kończy się, gdy gracz straci wszystkie trzy
+                        życia.</p>
 
-                    <button class="button-menu hvr-shutter-in-vertical btn-block" id="goback2">cofnij</button>
+                    <h4> Czas gry</h4>
+                    <p> Bieżący czas gry wyświetla się w górnym rogu ekranu.</p>
+
+                    <h4> Zwiększanie trudności gry</h4>
+                    <p> Po upływie zaplanowanego przez producenta czasu przeszkody pojawiają się szybciej, co wpływa na
+                        to, że gra staje się bardziej skomplikowana i wymaga od użytkownika szybszej reakcji.</p>
+
+                    <h4> Ranking gry</h4>
+                    <p> Po zakończeniu gry wynik zostaje zapisany do rankingu z możliwością wyświetlania przez
+                        użytkownika.</p>
+
+
+                        <button class="button-menu hvr-shutter-in-vertical btn-block" id="goback2">cofnij</button>
                     <div class="float"></div>
                 </div>
                 <div class="game-buttons"><p>Fitstyle by tuTim</p></div>
@@ -199,6 +211,7 @@
 <script src="lib/jquery-2.1.4.min.js"></script>
 <script>
     $(document).ready(function () {
+        $("#game-intro").fadeIn([0]);
 
         ////Main button intro
         $("#trigger").click(function () {
@@ -221,9 +234,16 @@
         });
     });
 
-        ////button go back in main menu
+    ////button go back in main menu
     $("#goback").click(function () {
         $("#game-menu").fadeOut("slow", function () {
+            window.location.href = "index.html";
+        });
+    });
+
+    ////button go back in main menu
+    $("#goback-en").click(function () {
+        $("#game-menu-en").fadeOut("slow", function () {
             window.location.href = "index.html";
         });
     });
