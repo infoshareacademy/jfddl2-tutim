@@ -213,6 +213,16 @@ ul li:hover::after {
     transition: width .4s;
 }
 
+ul li:focus{
+    background: white;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+   text-transform: capitalize;
+    font-weight: bold;
+   background: transparent;
+}
+
 .navbar-default .navbar-nav li a:hover {
     color: white;
 }
