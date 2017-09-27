@@ -1,5 +1,5 @@
 function Stick() {
-    this.health = 3;
+    this.health = 0;
     this.handle;
     this.handleHealth;
     this.score = 0;
@@ -7,7 +7,7 @@ function Stick() {
     this.positions = {
         inital: '5%',
         crouched: '-15%',
-        jumped: '20%'     
+        jumped: '20%'
     };
 }
 
@@ -26,7 +26,7 @@ Stick.prototype.init = function () {
 
     this.handle.css('bottom', this.positions.inital);
 
-    this.interval = setInterval(function(){
+    this.interval = setInterval(function () {
         self.score = self.score + 1;
         self.updateScore();
     }, 1000);
@@ -42,20 +42,60 @@ Stick.prototype.getScore = function () {
 
 // Odjecie jednego zycia z sticka
 Stick.prototype.removeHp = function () {
-    var health = this.health -1;
+    var health = this.health - 1;
     if (health < 0) {
-        // $('#game-play').remove();
-        clearInterval(intervalID);
-        console.log('@TODO: GAME OVER');
-        clearInterval(this.interval);
-        $('#stick').remove();
-        $('#game-play').css('animation', 'none');
+        this.gameOver();
     }
     else {
         this.health = health;
         this.updateHp();
     }
 };
+
+Stick.prototype.gameOver = function () {
+    console.log('@TODO: GAME OVER');
+
+    // obstacles generation
+    clearInterval(intervalID);
+    // points interval
+    clearInterval(this.interval);
+
+    this.handle.remove();
+    $('#game-play').css('animation', 'none');
+
+    this.saveHighScore();
+}
+
+Stick.prototype.saveHighScore = function () {
+    var scores = localStorage.getItem('scores') ? JSON.parse(localStorage.getItem('scores')) : [];
+
+    console.log('scores', scores);
+
+    var name = prompt('Podaj swoje imię!');
+
+    var singleScore = {
+        name: name,
+        score: this.score
+    };
+
+    scores.push(singleScore);
+
+    localStorage.setItem('scores', JSON.stringify(scores));
+
+    var allScores = JSON.parse(localStorage.getItem('scores'));
+
+    var alertScores = '';
+
+    allScores.forEach(function (element, index) {
+        // console.log((index+1) +': '+ element.name + ' - ' + element.score);
+        alertScores += (index+1) +': '+ element.name + ' - ' + element.score + '\n';
+    });
+
+    alert(alertScores);
+
+    // @todo sort! :)
+}
+
 
 // Aktualizja ilosci HP na ekranie
 Stick.prototype.updateHp = function () {
@@ -66,15 +106,15 @@ Stick.prototype.updateScore = function () {
     $('#score').html('<span class="glyphicon glyphicon-calendar"></span> ' + this.getScore());
 };
 
-Stick.prototype.crouch = function(){
+Stick.prototype.crouch = function () {
     var self = this;
     self.handle.css('bottom', this.positions.crouched);
 
     // self.handle.addClass('crouch');
-    setTimeout(function(){
+    setTimeout(function () {
         // self.handle.removeClass('crouch');
         self.handle.css('bottom', self.positions.inital);
-    },1000);
+    }, 1000);
     // stick.removeClass('rise');
 }
 
@@ -85,7 +125,7 @@ Stick.prototype.jump = function () {
     self.handle.css('bottom', this.positions.jumped);
 
     // self.handle.addClass('crouch');
-    setTimeout(function(){
+    setTimeout(function () {
         // self.handle.removeClass('crouch');
         self.handle.css('bottom', self.positions.inital);
     }, 500);
