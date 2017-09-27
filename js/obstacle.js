@@ -1,12 +1,7 @@
 function Obstacle() {
     this.handle;
     this.collided = false;
-    var _position = {
-        x1: 0,
-        y1: 0,
-        x2: 0,
-        y2: 0
-    }
+
 }
 
 Obstacle.prototype.init = function () {

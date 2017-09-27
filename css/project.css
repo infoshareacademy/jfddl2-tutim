@@ -63,9 +63,9 @@ body {
 }
 
 #stick.crouch {
-    animation: crouch 3s linear;
+    /* animation: crouch 3s linear; */
     background: url('../images/crouch.gif') no-repeat;
-    width: 10vw;
+    /* width: 10vw; */
 }
 
 #stick.jump {

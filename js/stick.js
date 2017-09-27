@@ -4,24 +4,28 @@ function Stick() {
     this.handleHealth;
     this.score = 0;
     this.moved = false;
-    var _position = {
-        x1: 0,
-        y1: 0,
-        x2: 0,
-        y2: 0
-    }
+    this.positions = {
+        inital: '5%',
+        crouched: '-15%',
+        jumped: '20%'     
+    };
 }
 
 // Inicjalizacja naszego czlowieka
 Stick.prototype.init = function () {
     // Dodanie elementu DOM do przestrzeni gry
-    $('#game-play').append('<div id="stick" class="init"></div>');
+    var gamePlay = $('#game-play');
+    gamePlay.append('<div id="stick" class="init"></div>');
 
-    $('#game-play').append('<div id="score"><span class="glyphicon glyphicon-calendar"></span>' + this.getScore() + '</div>');
-    $('#game-play').append('<div id="health"><span class="glyphicon glyphicon-heart"></span>' + this.getHealth() + '</div>');
+    gamePlay.append('<div id="score"><span class="glyphicon glyphicon-calendar"></span>' + this.getScore() + '</div>');
+    gamePlay.append('<div id="health"><span class="glyphicon glyphicon-heart"></span>' + this.getHealth() + '</div>');
+
     this.handle = $('#stick');
     this.handleHealth = $('#health');
     var self = this;
+
+    this.handle.css('bottom', this.positions.inital);
+
     this.interval = setInterval(function(){
         self.score = self.score + 1;
         self.updateScore();
@@ -62,40 +66,30 @@ Stick.prototype.updateScore = function () {
     $('#score').html('<span class="glyphicon glyphicon-calendar"></span> ' + this.getScore());
 };
 
-// Unikanie przeszkody (kucanie)
-Stick.prototype.crouch = function () {
-    if (!this.moved) {
-        this.moved = true;
-        $('#stick').addClass('crouch');
-
-        setTimeout(function () {
-            $('#stick').removeClass('crouch');
-            stick.moved = false;
-        }, 1000);
-    }
-};
-
-
 Stick.prototype.crouch = function(){
-    var stick = $('#stick');
-    stick.addClass('crouch');
+    var self = this;
+    self.handle.css('bottom', this.positions.crouched);
+
+    // self.handle.addClass('crouch');
     setTimeout(function(){
-        stick.removeClass('crouch');
-        stick.addClass('rise');
+        // self.handle.removeClass('crouch');
+        self.handle.css('bottom', self.positions.inital);
     },1000);
-    stick.removeClass('rise');
+    // stick.removeClass('rise');
 }
 
 
 // Unikanie przeszkody (skakanie)
 Stick.prototype.jump = function () {
-    var stick = $('#stick');
-    stick.addClass('jump');
-    setTimeout(function () {
-        stick.removeClass('jump');
-        stick.addClass('fall');
-    }, 1000);
-    stick.removeClass('fall');
+    var self = this;
+    self.handle.css('bottom', this.positions.jumped);
+
+    // self.handle.addClass('crouch');
+    setTimeout(function(){
+        // self.handle.removeClass('crouch');
+        self.handle.css('bottom', self.positions.inital);
+    }, 500);
+    // stick.removeClass('rise');
 };
 
 Stick.prototype.getCoordinates = function () {
