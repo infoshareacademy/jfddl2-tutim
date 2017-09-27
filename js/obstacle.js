@@ -11,8 +11,8 @@ Obstacle.prototype.init = function () {
     // Losujemy liczbe z zakresu kluczy w tablicy obstacles
     var random = Math.floor(Math.random() * obstacles.length);
 
-    $('#game-play').append('<div class="obstacle ' + obstacles[random] + '"></div>');
-    this.handle = $('#game-play .obstacle:last-child');
+    this.handle = $('<div class="obstacle ' + obstacles[random] + '"></div>');
+    $('#game-play').append(this.handle);
 };
 
 Obstacle.prototype.move = function () {
@@ -50,11 +50,13 @@ Obstacle.prototype.collide = function (stick) {
 
         if (coordinates.x1 <= stickCoordinates.x1 && stickCoordinates.y1 <= coordinates.y1 && coordinates.y1 <= stickCoordinates.y2) {
             this.collided = true;
+            this.handle.remove();
             return true;
         }
 
         if (coordinates.x2 <= stickCoordinates.x2 && stickCoordinates.y1 <= coordinates.y2 && coordinates.y2 <= stickCoordinates.y2) {
             this.collided = true;
+            this.handle.remove();
             return true;
         }
 
