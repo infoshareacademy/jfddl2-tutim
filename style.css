@@ -92,7 +92,7 @@
 }
 
 .fitform {
-    padding: 15px 0 0 0,
+    padding: 15px 0 0 0;
 }
 
 .modal-font h2 {
@@ -648,20 +648,24 @@ h1 {
     /*max-width: 100%;*/
     /*padding-top: 5%;*/
     /*padding-bottom: 10%;*/
-    max-width: 75%;
-    margin-left: 12%;
+    max-width: 90%;
+    margin-left: -1%;
 }
 
+.position {
+    margin-top:50%;
+
+}
 .iconwrap {
-    position: absolute;
+    position: relative;
     background-color: #ffffff;
     border-radius: 50%;
-    max-width:70%;
-padding: 16%;
+    max-width: 50%;
+    padding: 12%;
 }
 
 .iconwrap2 {
-    position: absolute;
+    position: relative;
     background-color: #ffffff;
     border-radius: 50%;
     max-width:70%;
@@ -669,7 +673,7 @@ padding: 16%;
 }
 
 .iconwrap3 {
-    position: absolute;
+    position: relative;
     background-color: #ffffff;
     border-radius: 50%;
     max-width:70%;
@@ -679,22 +683,20 @@ padding: 16%;
 
 
 .wrap-padding {
-    margin: 3em 0 3em 0;
+    margin: 7em 0 7em 0;
 }
 
-
-.iconline::before {
+.purpleline::before {
     content: '';
-    width: 30px;
-    height: 100%;
+    background-image: url(images/purpleline.png);
+    width: 2px;
+    height: 53%;
+    z-index: 0;
     position: absolute;
-    top: 10%;
-    left: 10%;
-    background: url('images/bg-pattern');
-    background-size: 3px 10px;
-    background-repeat: repeat-y;
-    z-index: 3;
+    left: 29%;
+    top: 28%;
 }
+
 
 .iconfit {
     position: relative;
@@ -771,11 +773,49 @@ padding: 16%;
     max-width: 100%;
 }
 
-@media screen and (max-width: 991px) {
-
+@media screen and (max-width: 1200px) {
     .img img {
-        max-width: 100%;
-        margin-left: 0;
+        padding-top: 33%;
+    }
+
+    .wrap-padding {
+        margin: 10em 0 4em 0;
+    }
+    .purpleline::before {
+        height: 65%;
+        top: 21%;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .wrap-padding {
+        margin: 3em 0 0em 0;
+        margin-left: 7em;
+    }
+
+    .iconwrap {
+        position: relative;
+        background-color: #ffffff;
+        border-radius: 50%;
+        max-width: 23%;
+        padding: 6%;
+    }
+
+    .purpleline::before {
+        height: 45%;
+        top: 30%;
+        left: 41%;
+            }
+    .img img {
+        padding-top: 3%;
+        padding-left:30%;
+    }
+    .position {
+        margin-top: 12%;
+    }
+    .iconfitd {
+        padding-left: -10%;
     }
 }
 
@@ -790,6 +830,26 @@ padding: 16%;
 @media screen and (max-width: 490px) {
     .iconfitd {
         padding-left: 10%;
+    }
+
+    .position {
+        margin-top: 20%;
+    }
+
+    .wrap-padding {
+        margin: 4em 0 6em 0;
+        margin-left: 4em;
+    }
+
+    .iconwrap {
+        max-width: 60%;
+        padding: 13%;
+    }
+
+    .purpleline::before {
+        height: 45%;
+        top: 25%;
+        left: 62%;
     }
 
 
