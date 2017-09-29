@@ -783,7 +783,7 @@ h1 {
         border: none;
         margin-right: 5%;
         margin-bottom: 5%;
-
+        margin-top:5%;
     }
 
     .btn-responsive:focus {
@@ -807,6 +807,8 @@ h1 {
         font-size: 20px;
         font-weight: bold;
         padding: 2%;
+        margin-top: 5%;
+        margin-bottom: 3%;
 
     }
 
@@ -837,6 +839,8 @@ h1 {
 
 @media screen and (max-width: 991px) {
 
+
+
     .btn-responsive {
 
         background-color: #933EC4;
@@ -845,7 +849,7 @@ h1 {
         border: none;
         margin-right: 5%;
         margin-bottom: 5%;
-
+        margin-top:5%;
     }
 
     .btn-responsive:focus {
@@ -972,6 +976,7 @@ h1 {
         margin-right: 5%;
         margin-bottom: 5%;
 
+
     }
 
     .btn-responsive:focus {
@@ -1036,6 +1041,8 @@ h1 {
 
 }
 
+
+
 .banner-photo {
 
     background: url('images/tlo.jpg');
@@ -1045,15 +1052,14 @@ h1 {
 
 }
 
-.banner-photo .tutim {
+.banner-photo .creators {
 
     text-align: center;
     font-weight: bold;
     color: #9AD436;
-    font-size: 5em;
-    margin-bottom: 100%;
-    padding-bottom: 16%;
-
+    font-size: 3em;
+    margin-bottom: 0; !important;
+    margin-top: 2%;
 }
 
 .btn-responsive {
@@ -1064,6 +1070,8 @@ h1 {
     border: none;
     margin-right: 5%;
     margin-bottom: 5%;
+    margin-top:5%;
+
 
 }
 
@@ -1081,6 +1089,8 @@ h1 {
 
     background-color: #adc43e;
 }
+
+
 
 #myModalLabel {
 
