@@ -11,18 +11,17 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
+
 </head>
 <body>
-<link rel="stylesheet" type="text/css"
-      href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 <script>
-    window.addEventListener("load", function () {
+    window.addEventListener("load", function(){
         window.cookieconsent.initialise({
             "palette": {
                 "popup": {
@@ -40,8 +39,7 @@
                 "message": "Portal i aplikacja Fitstyle wykorzystuje pliki cookies do poprawnego działania. ",
                 "dismiss": "Akceptuję"
             }
-        })
-    });
+        })});
 </script>
 <!--Piotr Iwańczuk - start-->
 
@@ -69,66 +67,65 @@
     </nav>
 
     <div class="wrapper">
+
+
+        <div class="container-carousel">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                    <li data-target="#carousel" data-slide-to="3"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/carousel1.jpeg">
+
+                    </div>
+                    <div class="item">
+                        <img src="images/carousel3.jpg">
+                        <
+                    </div>
+                    <div class="item">
+                        <img src="images/carousel2.jpeg">
+
+                    </div>
+                    <h1 class="heading">Witaj na FitStyle!</h1>
+                    <div><p class="text">Dołącz do elitarnej grupy osób, które będą mogły wypróbować naszą aplikację przed premierą!</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
         <div class="container">
             <div class="row">
                 <div class="pic">
                     <h6 id="linkform"><a href="#formMain" data-toggle="collapse">Zapisz się teraz!</a></h6>
-
+                    <div id="formMain" class="collapse">
+                        <form action="https://formspree.io/your@email.com"
+                              method="POST" class="form-inline">
+                            <label>Imię i nazwisko</label>
+                            <input name="name" placeholder="Jan Kowalski">
+                            <label>Email</label>
+                            <input name="email" type="email" placeholder="fitstyle@tuTim.pl">
+                            <input id="submit" name="submit" type="submit" value="Wyślij">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <h1 class="heading">Witaj na FitStyle!</h1>
-    <div><p class="text">Dołącz do elitarnej grupy osób, które będą mogły wypróbować naszą aplikację przed premierą!</p>
-    </div>
+
+
+</div>
 </div>
 
 
 <!--Piotr Iwańczuk - koniec-->
 
 <!--Jakub Makarczuk - start-->
-
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-    <!-- Modal content -->
-
-
-    <div class="modal-content">
-        <div class="modal-header">
-            <span class="close">&times;</span>
-            <div class="modal-font"><h2>Zapisz się i zagraj w <strong>FIT</strong> runner</h2></div>
-        </div>
-        <div class="fitstyle-form">
-            <div><h2>FIT runner</h2>
-                <p>
-                    Już wkrótce premiera naszej aplikacji Fitstyle. Aby nie przegapić tego wydarzenia, podaj swój adres
-                    e-mail a otrzymasz od nas powiadomienie o starcie Fitstyle! W podziękowaniu za zapis otrzymasz
-                    dostęp do gry FIT runner.
-                </p>
-
-            </div>
-
-            <form class="form-inline" action="https://formspree.io/jakub@jotem.in"
-                  method="POST">
-                <div class="form-group">
-                    <label for="exampleInputEmail2">Podaj e-mail: </label>
-
-                    <input type="email" pattern="[^ @]*@[^ @]*" placeholder="Podaj swój email" class="modal-input"
-                           id="formmail" name="mail klienta">
-                </div>
-                <button type="submit" class="btn-submit" id="formwrap">Wyślij</button>
-                <input type="hidden" name="_next" value="http://www.tutim.jfddl2.is-academy.pl/index2.html"/>
-            </form>
-
-        </div>
-        <div class="modal-footer">
-            <h3>Fitstyle by tuTim</h3>
-        </div>
-    </div>
-
-</div>
 
 <div id="midSec">
     <div class="fitstylemodule">
@@ -137,58 +134,59 @@
                 <h1 class="under">czym jest fitstyle</h1><span class="pline"></span>
             </div>
         </div>
+
+
         <div class="container">
-
             <div class="row">
-                <div class="col-xs-12 col-md-12">
-                    <div class="row">
-                        <div class="col-xs-6 col-md-2 iconfit-l">
-                            <div class="row iconfita position"><h3>Analiza postępów</h3>
-                                <p>Nasza aplikacja stale monitoruje postęp użytkownika i wykonuje jego analizę. Dzięki
-                                    temu można poprawiać swój wynik i efekty.</p>
-                            </div>
-                            <div class="row iconfitb"><h3>FitStyle Community</h3>
-                                <p>Fitstyle to także duża społeczność osób, które tak jak Ty chcą być fit. Dyskutuj,
-                                    dziel się opiniami oraz rywalizuj ze znajomymi w wyzwaniach Fitstyle!</p>
-                            </div>
-                            <div class="row iconfitc"><h3>Daily Challanges</h3>
-                                <p>Specjalne przygotowane dla Ciebie dzienne wyzwania, pomogą zmotywować do działania i
-                                    pozostać fit, nawet gdy złapie lenistwo.</p>
-                            </div>
+                <div class="col-xs-10 col-sm-4 col-md-4 col-lg-4 iconfit-l">
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <div class="row iconfita"><h3>Analiza postępów</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non leo et lacus consequat
+                                vulputate non ut ipsum. Aliquam cursus lacinia velit sit amet mollis.</p>
                         </div>
-                        <div class="col-xs-6 col-md-2">
-                            <div class="position">
-                                <div class="purpleline">
-                                    <div class="iconwrap wrap-padding">
-                                        <img src="images/icon1.svg" class="firsticon">
-                                    </div>
-                                    <div class="iconwrap wrap-padding">
-                                        <img src="images/icon2.svg" class="second-icon">
-                                    </div>
-                                    <div class="iconwrap wrap-padding">
-                                        <img src="images/icon3.svg" class="third-icon">
-                                    </div>
+                        <div class="row iconfitb"><h3>FitStyle Community</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non leo et lacus consequat
+                                vulputate non ut ipsum. Aliquam cursus lacinia velit sit amet mollis.</p>
+                        </div>
+                        <div class="row iconfitc"><h3>Daily Challanges</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non leo et lacus consequat
+                                vulputate non ut ipsum. Aliquam cursus lacinia velit sit amet mollis.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-4 col-md-4 col-lg-4">
+                        <div class="iconfita">
+                            <div class="icon-line">
+                                <div class="iconwrap">
+                                    <img src="images/icon1.svg" class="firsticon">
                                 </div>
+                                <div class="iconwrap2 iconline">
+                                    <img src="images/icon2.svg" class="second-icon">
+                                </div>
+                                <div class="iconwrap3">
+                                    <img src="images/icon3.svg" class="third-icon">
+                                </div>
+                            </div>
 
-                            </div>
-                            ​
                         </div>
-                        <div class="col-xs-0 col-md-4">
-                            <div class="img hidden-xs-down"><img src="images/fitstyle-aplikacja.png"></div>
-                        </div>
-                        <div class="col-xs-6 col-md-2">
-                            <div class="position">
-                                <div class="purpleline">
-                                    <div class="iconwrap wrap-padding">
-                                        <img src="images/icon4.svg" class="fourththicon">
-                                    </div>
-                                    <div class="iconwrap wrap-padding">
-                                        <img src="images/icon5.svg" class="five-icon">
-                                    </div>
-                                    <div class="iconwrap wrap-padding">
-                                        <img src="images/icon6.svg" class="six-icon">
-                                    </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 img"><img src="images/fitstyle-aplikacja.png"></div>
+                <div class="col-xs-10 col-sm-4 col-md-4 col-lg-4 iconfit-r"><div class="row">
+                    <div class="col-xs-2 col-sm-4 col-md-4 col-lg-4">
+
+                        <div class="iconfita">
+                            <div class="icon-line">
+                                <div class="iconwrap">
+                                    <img src="images/icon4.svg" class="fourththicon">
                                 </div>
+                                <div class="iconwrap2 iconline">
+                                    <img src="images/icon5.svg" class="five-icon">
+                                </div>
+                                <div class="iconwrap3">
+                                    <img src="images/icon6.svg" class="six-icon">
+                                </div>
+                            </div>
 
                             </div>
                             ​
@@ -210,142 +208,153 @@
                     </div>
 
                 </div>
-
             </div>
         </div>
     </div>
 </div>
 
+
+
+
+
 <!--Jakub Makarczuk - koniec-->
 <!--Monika Musak - start-->
 <div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="match-product-description photo-woman col-xs-6 col-sm-6 col-md-6"></div>
-            <div class="match-product-description col-xs-6 col-sm-6 col-md-6">
-                <h2><b>Dlaczego FitStyle</b></h2>
-                <div class="p1">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum lacus
-                        imperdiet risus
-                        placerat finibus. Quisque at arcu eget sapien hendrerit fringilla. Morbi sodales, justo in
-                        ornare
-                        pharetra, sem neque egestas ante, ac pharetra nunc nisl quis nibh. Nunc tempor eu tortor id
-                        suscipit.
-                        Fusce pellentesque mi nec lacinia euismod. Mauris nibh nisi, fermentum a ante non, posuere
-                        molestie
-                        quam. Mauris laoreet sapien nulla, quis aliquet augue bibendum eget.
-                    </p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="row">
 
-                    <p>
-                        Nunc tempor eu tortor id suscipit. Fusce pellentesque mi nec lacinia euismod. Mauris nibh
-                        nisi,
-                        fermentum a ante non, posuere molestie quam. Mauris laoreet sapien nulla, quis aliquet augue
-                        bibendum
-                        eget.Nunc tempor eu tortor id suscipit.
-                    </p>
+                <img src="images/zdjecie-pani.jpg" class="img-responsive">
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <h3>Dlaczego Fitstyle</h3>
+            <p class="paragraphs">
+                Dlaczego FitStyle? Chesz cieszyć sie dobrym samopoczuciem i lepszą kondycją na codzień? Chcesz
+                zyskać większą pewnosć siebie? Nasza aplikacja ci to ułatwi. Fitstyle.pl da ci możliwość
+                śledzenia
+                postępów w realizacji wyznaczonego przez Ciebie celu, bez względu na to czy chcesz schudnąć,
+                utrzymać wagę
+                czy może ją zwiększyć.
+            </p>
+            <form method="get" action="#midSec">
+            <button type="submit" class="btn btn-default btn-responsive btn-sm">
+                Więcej
+            </button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="woman-photo2 col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-right">
+            <div class="row">
+                <img src="images/zdjecie-pani2.jpg" class="img-responsive">
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <h3>Rozpocznij przygodę z Fitstyle</h3>
+            <p class="paragraphs">
+                Jak zacząć? To bardzo proste! Najpierw zarejestruj się na naszej stronie i odpowiedz na kilka
+                pytań
+                odnośnie Twojego stylu życia, sposobu odżywiana, aktywności fizycznej etc. Po przeanalizowaniu
+                tych
+                informacji, na Twoim profilu pojawią się spersonalizowane dane, które pomogą odmienić Twoje
+                życie.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid main">
+    <div class="row">
+        <div class="banner-photo col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h3 class="creators">twórcy fitsyle</h3>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="team-photo col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="row">
+                <img id="team" src="images/ekipa.jpg" class="img-responsive">
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <h2 class="meetteam">Poznaj tuTim</h2>
+
+            <p class="paragraphs2">Twórcy Fitstyle to czwórka pasjonatów, którch interesują zarówno zdrowy styl życia jak
+                i nowoczesne technologie. Z połączenia tych dwóch pasji powstał Fitstyle. W tej sekcji znajdziesz więcej informacji o zespole.
+            </p>
+
+            <button type="button" id="teamButton" class="btn btn-default btn-responsive btn-sm" data-toggle="modal" data-target="#myModal">
+                Zespół
+            </button>
+
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <p class="modal-title" id="myModalLabel">tuTim</p>
+                        </div>
+
+
+
+                        <div class="modal-body">
+
+                            <p class="paragraphs2">
+                                <span>Marysia</span> - kobieta, żona, mama dwóch córek. Lubi spędzać czas ze swoją rodziną oraz dwoma
+                                kotami.
+                                Interesuje się zdrowym żywieniem, ekologicznymi kosmetykami, rodzicielstwem bliskości
+                                oraz
+                                pedagogiką Montessori. Jej nowym hobby jest programowanie front-end.
+                            </p>
+
+                            <p class="paragraphs2">
+                                <span>Piotr</span> - z wykształcenia nauczyciel języka angielskiego. Programowaniem zajmuje się od
+                                kwietnia
+                                2017.Posługuje się takimi technologiami jak HTML, CSS, JavaScript, Jquery. Czerpie
+                                ogromną
+                                satysfakcje z momentów w których może osiągnąć założony efekt.
+                            </p>
+
+
+                            <p class="paragraphs2">
+                                <span>Jakub</span> – z wykszałcenia specjalista do spraw komunikacji, który blisko 10 lat
+                                przepracował w
+                                dużej korporacji medialnej. Hobbistycznie zajmuje się fotografią, filmowaniem oraz
+                                prowadzeniem
+                                własnych blogów oraz projektow internetowych.
+                            </p>
+
+                            <p class="paragraphs2">
+                                <span>Monika</span> – z wykształcenia anglistka. Interesuje się nowoczesnymi technologiami, a z
+                                programowaniem zetknęła się dość niedawno. W wolnym czasie jeździ w góry i zwiedza
+                                kolejne
+                                kraje.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-responsive" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
-
-                <button type="button" class="button1234 btn btn-success">Dowiedz się więcej</button>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="match-product-description col-xs-6 col-sm-6 col-md-6">
-
-                <h2><b>Otocz się wsparciem najlepszych trenerów</b></h2>
-                <div class="p2">
-                    <p> Jeśli chesz cieszyć sie dobrym samopoczuciem i lepszą kondycją na codzień? Chcesz zyskać
-                        większą pewnosć siebie? Nasza aplikacja ci to ułatwi. Fitstyle.pl da ci możliwość śledzenia
-                        postępów
-                        w
-                        realizacji wyznaczonego przez Ciebie celu, bez względu na to czy chcesz schudnąć, utrzymać
-                        wagę czy
-                        może
-                        ją zwiększyć. Po utworzeniu profilu będziesz mógł/a monitorować dzienne zapotrzebowanie
-                        energetyczne,
-                        śledzić liczbę kalorii spożytych w ciągu dnia oraz sprawdzać ile jeszcze pozostało do
-                        osiągnięcia
-                        wybranego przez Ciebie celu. W specjalnej zakładce bedziesz miał/a również możliwość
-                        śledzenia
-                        historii
-                        postępów.
-                    </p>
-
-                    <p id="about">Jak zacząć? To bardzo proste! Najpierw zarejestruj się na naszej stronie i
-                        odpowiedz na kilka pytań
-                        odnośnie Twojego stylu życia, sposobu odżywiana, aktywności fizycznej etc. Po
-                        przeanalizowaniu tych
-                        informacji, na Twoim profilu pojawią się spersonalizowane dane, które pomogą odmienić Twoje
-                        życie.
-                    </p>
-                </div>
             </div>
 
 
-            <div class="match-product-description photo-woman2 col-xs-6 col-sm-6 col-md-6"></div>
         </div>
     </div>
 
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="banner-img col-xs-12 col-sm-12 col-md-12">
-                <h3><b>twórcy fitstyle</b></h3>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="match-product-description team-photo col-xs-6 col-sm-6 col-md-6"></div>
-
-            <div class="match-product-description col-xs-6 col-sm-6 col-md-6">
-
-                <h2><b>Poznaj tuTim</b></h2>
-                <div class="p3">
-                    <p>
-                        Marysia - kobieta, żona, mama dwóch córek. Lubi spędzać czas ze swoją rodziną oraz dwoma
-                        kotami.
-                        Interesuje się zdrowym żywieniem, ekologicznymi kosmetykami, rodzicielstwem bliskości oraz
-                        pedagogiką Montessori. Ostatnio odwiedziła kilka polskich miast i chętnie zobaczy kolejne.
-                        Jej nowym
-                        hobby
-                        jest programowanie front-end.
-                    </p>
-
-                    <p>
-                        Piotr - z wykształcenia nauczyciel języka angielskiego. Programowaniem zajmuje się od
-                        kwietnia
-                        2017. Posługuje się takimi technologiami jak HTML, CSS, JavaScript, Jquery. Czerpie ogromną
-                        satysfakcje z momentów w których może osiągnąć założony efekt, który najczęściej jest
-                        zrodzony w
-                        bólach
-                        prób i
-                        masy poprawek.
-                    </p>
-
-                    <p>
-                        Jakub – z wykszałcenia specjalista do spraw komunikacji, który blisko 10 lat przepracował w
-                        dużej korporacji medialnej. Hobbistycznie zajmuje się fotografią, filmowaniem oraz
-                        prowadzeniem
-                        własnych blogów oraz projektow internetowych.
-                    </p>
-
-                    <p>
-                        Monika – z wykształcenia anglistka. Interesuje się nowoczesnymi technologiami, a z
-                        programowaniem zetknęła się dość niedawno. W wolnym czasie jeździ w góry i zwiedza kolejne
-                        kraje.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 <!--Monika Musak - koniec-->
 
@@ -358,69 +367,70 @@
             </div>
             <div class="more col-xs-12 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-sm-4  col-md-4 col-lg-4">
                 <h2>Dowiedz się więcej</h2>
-                <form class="form-inline" action="https://formspree.io/jakub@jotem.in"
-                      method="POST">
+                <form class="form-inline">
                     <div class="form-group">
                         <label for="exampleInputEmail2">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2"
-                               placeholder="example@example.com" name="mail klienta">
+                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
                     </div>
                     <button type="submit" class="btn btn-default">Wyślij</button>
                 </form>
+
+
             </div>
+        </div>
+    </div>
+
+    <div class="row black">
+
+        <div class="copyright  col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+            <p>&copy <strong> tuTIM </strong>2017. Wszystkie prawa zastrzeżone.</p>
         </div>
 
 
-        <div class="row black">
-
-            <div class="copyright  col-xs-12 col-sm-4 col-md-4 col-lg-4">
-
-                <p>&copy <strong> tuTIM </strong>2017. Wszystkie prawa zastrzeżone.</p>
-            </div>
-
-
-            <div class="media col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <div class="row smallmedia">
-                    <div class="facebook col-xs-offset-1 col-xs-2">
-                        <a target="_blank" href="https://facebook.com/tuTIM"><i class="fa fa-facebook"
-                                                                                aria-hidden="true"></i></a>
-                    </div>
-                    <div class="twitter col-xs-2">
-                        <a target="_blank" href="https://twitter.com/tuTIM"><i class="fa fa-twitter"
-                                                                               aria-hidden="true"></i></a>
-                    </div>
-                    <div class="linkedin col-xs-2">
-                        <a target="_blank" href="https://linkedin.com/tuTIM"><i class="fa fa-linkedin"
-                                                                                aria-hidden="true"></i></a>
-                    </div>
-                    <div class="apple col-xs-2">
-                        <a target="_blank" href="https://apple.com/tuTIM"><i class="fa fa-apple"
-                                                                             aria-hidden="true"></i></a>
-                    </div>
-                    <div class="android col-xs-2">
-                        <a target="_blank" href="https://android.com.pl/tuTIM"><i class="fa fa-android"
-                                                                                  aria-hidden="true"></i></a>
-                    </div>
+        <div class="media col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="row smallmedia">
+                <div class="facebook col-xs-offset-1 col-xs-2">
+                    <a target="_blank" href="https://facebook.com/tuTIM"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 </div>
-            </div>
-
-            <div class="contact col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <div class="row mailphone">
-                    <div class="mail col-xs-12 col-sm-7 col-md-7 col-lg-7">
-                        <a href="mailto:jakub@jotem.in?Subject=Hello" target="_top"><i
-                                class="fa fa-envelope" aria-hidden="true"></i>&nbsp;kontakt@fitstyle.pl</a>
-                    </div>
-
-                    <div class="phone col-xs-12 col-sm-5 col-md-5 col-lg-5">
-                        <span><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;81 525 00 71</span>
-                    </div>
+                <div class="twitter col-xs-2">
+                    <a target="_blank" href="https://twitter.com/tuTIM"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+                <div class="linkedin col-xs-2">
+                    <a target="_blank" href="https://linkedin.com/tuTIM"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+                <div class="apple col-xs-2">
+                    <a target="_blank" href="https://apple.com/tuTIM"><i class="fa fa-apple" aria-hidden="true"></i></a>
+                </div>
+                <div class="android col-xs-2">
+                    <a target="_blank" href="https://android.com.pl/tuTIM"><i class="fa fa-android" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
 
+        <div class="contact col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="row mailphone">
+                <div class="mail col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                    <a href="mailto:kontakt@fitstyle.pl.com?Subject=Hello" target="_top"><i
+                            class="fa fa-envelope" aria-hidden="true"></i>&nbsp;kontakt@fitstyle.pl</a>
+                </div>
+
+                <div class="phone col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                    <span><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;81 525 00 71</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row end">
+        <div class="end col-xs-12">l</div>
     </div>
 </div>
+
 <!--Maria Mioduska - koniec-->
+
+
 
 
 <script src="https://use.fontawesome.com/1279572723.js"></script>
@@ -432,14 +442,12 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
 
-<button onclick="scrollToTop()" id="backToTop" title="Back to top"><i class="fa fa-arrow-up" aria-hidden="true"></i>
-</button>
+
+<button onclick="topFunction()" id="backToTop" title="Back to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 
 <script>
     // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () {
-        scrollFunction()
-    };
+    window.onscroll= function() {scrollFunction()};
 
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -449,49 +457,19 @@
         }
     }
 
-
     // When the user clicks on the button, scroll to the top of the document
-    var timeOut;
-
-    function scrollToTop() {
-        if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
-            window.scrollBy(0, -70);
-            timeOut = setTimeout('scrollToTop()', 10);
-        }
-        else clearTimeout(timeOut);
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     }
 
-    ///momdal butoan jakub
-    // Get the modal
-    var modal = document.getElementById('myModal');
-    var btn = document.getElementById("linkform");
-    var span = document.getElementsByClassName("close")[0];
-    btn.onclick = function () {
-        modal.style.display = "block";
-    };
 
-    span.onclick = function () {
-        modal.style.display = "none";
-    };
 
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    };
-
-    //expand textarea
-    function adjust_textarea(h) {
-        h.style.height = "20px";
-        h.style.height = (h.scrollHeight) + "px";
-    }
-
-    ///end modal button
-
-    $('.move').click(function () {
-        $('html,body').animate({
-            scrollTop: $($(this).attr('href')).offset().top
+    $('.move').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
         }, 500);
+        return false;
     });
 
 
