@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,600,700,900&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,500,600&subset=latin-ext');
 
-/*body {*/
+body {
+    font-size: 1em;
+}
     /*width: 100vw;*/
     /*height: 80vh;*/
     /*background: #ffffff; !* For browsers that do not support gradients *!*/
@@ -393,14 +395,18 @@ display:none;
     .game-logo img {
         position: absolute;
         max-width: 70%;
-        left: 7%;
+        left: 6em;
         top: -5em;
     }
 
     .heading {
-        padding-top: 25vh;
-        padding-left: 0%;
-        transition-delay: 0.3ms;
+        padding-top: 49%;
+        padding-left: 23%;
+    }
+
+    .button {
+        min-width: 20em;
+        margin-top: 2em;
     }
 
     .button-menu {
@@ -442,7 +448,7 @@ display:none;
         }
 
         .heading {
-            padding-top: 25vh;
+            padding-top: 10vh;
             padding-left: 0%;
             transition-delay: 0.3ms;
         }
@@ -480,26 +486,34 @@ display:none;
 @media only screen and (max-width: 650px) {
     .game-logo img {
         position: absolute;
-        max-width: 80%;
-        left: 37%;
+        max-width: 100%;
+        left: 5%;
         top: -1em;
     }
 
-    .heading {
-        padding-top: 7vh;
-        padding-left: 2%;
+    .tekst h3 {
+        font-size: 7em;
+        margin-top: -13%;
     }
 
-    .game-logo img {
-        position: absolute;
-        max-width: 70%;
-        left: 7%;
-        top: -5em;
+    .tekst h1 {
+        font-size: 11em;
     }
 
     .heading {
-        padding-top: 25vh;
-        transition-delay: 0.3ms;
+        padding-top: 35vh;
+    }
+
+
+    .button {
+       font-size: 1em;
+        padding: 0.8em 6.5em 0.8em 6.7em;
+        font-size: 1em;
+   }
+
+    .button:hover {
+        padding: 0.8em 6.5em 0.8em 6.7em;
+        font-size: 1em;
     }
 
     .button-menu {
@@ -507,7 +521,7 @@ display:none;
     }
 
     .game-buttons p {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .menu-header h3 {

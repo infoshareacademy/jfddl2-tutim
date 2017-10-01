@@ -92,7 +92,7 @@
 }
 
 .fitform {
-    padding: 15px 0 0 0,
+    padding: 15px 0 0 0;
 }
 
 .modal-font h2 {
@@ -211,16 +211,6 @@ ul li::after {
 ul li:hover::after {
     width: 100%;
     transition: width .4s;
-}
-
-ul li:focus{
-    background: white;
-}
-
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
-   text-transform: capitalize;
-    font-weight: bold;
-   background: transparent;
 }
 
 .navbar-default .navbar-nav li a:hover {
@@ -658,68 +648,55 @@ h1 {
     /*max-width: 100%;*/
     /*padding-top: 5%;*/
     /*padding-bottom: 10%;*/
-    max-width: 75%;
-    margin-left: 12%;
+    max-width: 90%;
+    margin-left: -1%;
 }
 
+.position {
+    margin-top:50%;
+
+}
 .iconwrap {
-    position: absolute;
-}
-
-.iconwrap::after {
-    content: '';
-    position: absolute;
-    height: 5em;
-    width: 5em;
-    padding-bottom: 5em;
-    background: white;
-    top: 3.6em;
-    left: 2.3em;
-    z-index: -1;
+    position: relative;
+    background-color: #ffffff;
     border-radius: 50%;
-    transform: scale(1.5);
+    max-width: 50%;
+    padding: 12%;
 }
 
-.iconwrap2::after {
-    content: '';
-    position: absolute;
-    height: 5em;
-    width: 5em;
-    padding-bottom: 5em;
-    background: white;
-    top: 14.9em;
-    left: 2.3em;
-    z-index: -1;
+.iconwrap2 {
+    position: relative;
+    background-color: #ffffff;
     border-radius: 50%;
-    transform: scale(1.5);
+    max-width:70%;
+    padding: 16%;
 }
 
-.iconwrap3::after {
-    content: '';
-    position: absolute;
-    height: 5em;
-    width: 5em;
-    padding-bottom: 5em;
-    background: white;
-    top: 29.6em;
-    left: 2.3em;
-    z-index: -1;
+.iconwrap3 {
+    position: relative;
+    background-color: #ffffff;
     border-radius: 50%;
-    transform: scale(1.5);
+    max-width:70%;
+    padding: 16%;
+    top: 15%;
+    }
+
+
+.wrap-padding {
+    margin: 7em 0 7em 0;
 }
 
-.iconline::before {
+.purpleline::before {
     content: '';
-    width: 30px;
-    height: 100%;
+    background-image: url(images/purpleline.png);
+    width: 2px;
+    height: 53%;
+    z-index: 0;
     position: absolute;
-    top: 10%;
-    left: 10%;
-    background: url('images/bg-pattern');
-    background-size: 3px 10px;
-    background-repeat: repeat-y;
-    z-index: 3;
+    left: 29%;
+    top: 28%;
 }
+
 
 .iconfit {
     position: relative;
@@ -763,122 +740,86 @@ h1 {
 .firsticon {
     position: relative;
     text-align: center;
-    max-width: 70%;
-    left: 41%;
-    top: 4em;
+    max-width: 100%;
 }
 
 .second-icon {
     position: relative;
     text-align: center;
-    max-width: 70%;
-    left: 41%;
-    top: 15em;
+    max-width: 100%;
 }
 
 .third-icon {
     position: relative;
     text-align: center;
-    max-width: 70%;
-    left: 41%;
-    top: 20em;
+    max-width: 100%;
 }
 
 .fourththicon {
     position: relative;
     text-align: center;
-    max-width: 70%;
-    top: 3.5em;
-    left: 0.3em;
+    max-width: 100%;
 }
 
 .five-icon {
     position: relative;
     text-align: center;
-    max-width: 70%;
-    top: 13.5em;
-    left: -0.4em;
+    max-width: 100%;
 }
 
 .six-icon {
     position: relative;
     text-align: center;
-    max-width: 70%;
-    top: 18.5em;
-    left: -0.4em;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .img img {
+        padding-top: 33%;
+    }
+
+    .wrap-padding {
+        margin: 10em 0 4em 0;
+    }
+    .purpleline::before {
+        height: 65%;
+        top: 21%;
+    }
+
 }
 
 @media screen and (max-width: 991px) {
+    .wrap-padding {
+        margin: 3em 0 0em 0;
+        margin-left: 7em;
+    }
 
+    .iconwrap {
+        position: relative;
+        background-color: #ffffff;
+        border-radius: 50%;
+        max-width: 23%;
+        padding: 6%;
+    }
+
+    .purpleline::before {
+        height: 45%;
+        top: 30%;
+        left: 41%;
+            }
     .img img {
-        max-width: 100%;
-        margin-left: 0;
+        padding-top: 3%;
+        padding-left:30%;
+    }
+    .position {
+        margin-top: 12%;
+    }
+    .iconfitd {
+        padding-left: -10%;
     }
 }
 
 @media screen and (max-width: 768px) {
-
-    .img {
-        height: auto;
-        width: 50%;
-        max-width: 100%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        text-align: center;
-        margin-left: 20%;
-    }
-
-    .firsticon {
-        position: absolute;
-        max-width: 100%;
-        left: 7em;
-        top: 8em;
-    }
-
-    .second-icon {
-        position: absolute;
-        max-width: 100%;
-        left: 7em;
-        top: 9em;
-    }
-
-    .third-icon {
-        position: absolute;
-        max-width: 100%;
-        left: 7em;
-        top: 18em;
-    }
-
-    .fourththicon {
-        position: absolute;
-        max-width: 80%;
-        left: 2em;
-        top: 1em;
-    }
-
-    .five-icon {
-        position: absolute;
-        max-width: 80%;
-        left: 2em;
-        top: 9em;
-    }
-
-    .six-icon {
-        position: absolute;
-        max-width: 80%;
-        left: 2em;
-        top: 17em;
-    }
-
-    .img img {
-        height: auto;
-        width: 50%;
-        max-width: 100%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        text-align: center;
-        margin-left: 20%;
-    }
 
     .iconfitd {
         padding-left: 10%;
@@ -891,57 +832,26 @@ h1 {
         padding-left: 10%;
     }
 
-    .firsticon {
-        position: absolute;
-        max-width: 250%;
-        left: 3em;
-        top: 3em;
+    .position {
+        margin-top: 20%;
     }
 
-    .second-icon {
-        position: absolute;
-        max-width: 250%;
-        left: 3em;
-        top: 13em;
+    .wrap-padding {
+        margin: 4em 0 6em 0;
+        margin-left: 4em;
     }
 
-    .third-icon {
-        position: absolute;
-        max-width: 250%;
-        left: 3em;
-        top: 24em;
+    .iconwrap {
+        max-width: 60%;
+        padding: 13%;
     }
 
-    .fourththicon {
-        position: absolute;
-        max-width: 150%;
-        left: 0;
-        top: 2em;
+    .purpleline::before {
+        height: 45%;
+        top: 25%;
+        left: 62%;
     }
 
-    .five-icon {
-        position: absolute;
-        max-width: 150%;
-        left: 0;
-        top: 12em;
-    }
-
-    .six-icon {
-        position: absolute;
-        max-width: 150%;
-        left: 0;
-        top: 20em;
-    }
-
-    .img img {
-        height: auto;
-        width: 50%;
-        max-width: 100%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        text-align: center;
-        margin-left: 20%;
-    }
 
 }
 
