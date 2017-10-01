@@ -1,28 +1,32 @@
 function Stick() {
-    this.health = 3;
+    this.health = 10000;
     this.handle;
     this.handleHealth;
     this.score = 0;
     this.moved = false;
-    var _position = {
-        x1: 0,
-        y1: 0,
-        x2: 0,
-        y2: 0
-    }
+    this.positions = {
+        inital: '5%',
+        crouched: '-10%',
+        jumped: '30%'
+    };
 }
 
 // Inicjalizacja naszego czlowieka
 Stick.prototype.init = function () {
     // Dodanie elementu DOM do przestrzeni gry
-    $('#game-play').append('<div id="stick" class="init"></div>');
+    var gamePlay = $('#game-play');
+    gamePlay.append('<div id="stick" class="init"></div>');
 
-    $('#game-play').append('<div id="score"><span class="glyphicon glyphicon-calendar"></span>' + this.getScore() + '</div>');
-    $('#game-play').append('<div id="health"><span class="glyphicon glyphicon-heart"></span>' + this.getHealth() + '</div>');
+    gamePlay.append('<div id="score"><span class="glyphicon glyphicon-calendar"></span>' + this.getScore() + '</div>');
+    gamePlay.append('<div id="health"><span class="glyphicon glyphicon-heart"></span>' + this.getHealth() + '</div>');
+
     this.handle = $('#stick');
     this.handleHealth = $('#health');
     var self = this;
-    this.interval = setInterval(function(){
+
+    this.handle.css('bottom', this.positions.inital);
+
+    this.interval = setInterval(function () {
         self.score = self.score + 1;
         self.updateScore();
     }, 1000);
@@ -38,20 +42,60 @@ Stick.prototype.getScore = function () {
 
 // Odjecie jednego zycia z sticka
 Stick.prototype.removeHp = function () {
-    var health = this.health -1;
+    var health = this.health - 1;
     if (health < 0) {
-        // $('#game-play').remove();
-        clearInterval(intervalID);
-        console.log('@TODO: GAME OVER');
-        clearInterval(this.interval);
-        $('#stick').remove();
-        $('#game-play').css('animation', 'none');
+        this.gameOver();
     }
     else {
         this.health = health;
         this.updateHp();
     }
 };
+
+Stick.prototype.gameOver = function () {
+    console.log('@TODO: GAME OVER');
+
+    // obstacles generation
+    clearInterval(intervalID);
+    // points interval
+    clearInterval(this.interval);
+
+    this.handle.remove();
+    $('#game-play').css('animation', 'none');
+
+    this.saveHighScore();
+}
+
+Stick.prototype.saveHighScore = function () {
+    var scores = localStorage.getItem('scores') ? JSON.parse(localStorage.getItem('scores')) : [];
+
+    console.log('scores', scores);
+
+    var name = prompt('Podaj swoje imię!');
+
+    var singleScore = {
+        name: name,
+        score: this.score
+    };
+
+    scores.push(singleScore);
+
+    localStorage.setItem('scores', JSON.stringify(scores));
+
+    var allScores = JSON.parse(localStorage.getItem('scores'));
+
+    var alertScores = '';
+
+    allScores.forEach(function (element, index) {
+        // console.log((index+1) +': '+ element.name + ' - ' + element.score);
+        alertScores += (index+1) +': '+ element.name + ' - ' + element.score + '\n';
+    });
+
+    alert(alertScores);
+
+    // @todo sort! :)
+}
+
 
 // Aktualizja ilosci HP na ekranie
 Stick.prototype.updateHp = function () {
@@ -62,40 +106,30 @@ Stick.prototype.updateScore = function () {
     $('#score').html('<span class="glyphicon glyphicon-calendar"></span> ' + this.getScore());
 };
 
-// Unikanie przeszkody (kucanie)
 Stick.prototype.crouch = function () {
-    if (!this.moved) {
-        this.moved = true;
-        $('#stick').addClass('crouch');
+    var self = this;
+    self.handle.css('bottom', this.positions.crouched);
 
-        setTimeout(function () {
-            $('#stick').removeClass('crouch');
-            stick.moved = false;
-        }, 1000);
-    }
-};
-
-
-Stick.prototype.crouch = function(){
-    var stick = $('#stick');
-    stick.addClass('crouch');
-    setTimeout(function(){
-        stick.removeClass('crouch');
-        stick.addClass('rise');
-    },1000);
-    stick.removeClass('rise');
+    // self.handle.addClass('crouch');
+    setTimeout(function () {
+        // self.handle.removeClass('crouch');
+        self.handle.css('bottom', self.positions.inital);
+    }, 1000);
+    // stick.removeClass('rise');
 }
 
 
 // Unikanie przeszkody (skakanie)
 Stick.prototype.jump = function () {
-    var stick = $('#stick');
-    stick.addClass('jump');
+    var self = this;
+    self.handle.css('bottom', this.positions.jumped);
+
+    // self.handle.addClass('crouch');
     setTimeout(function () {
-        stick.removeClass('jump');
-        stick.addClass('fall');
-    }, 1000);
-    stick.removeClass('fall');
+        // self.handle.removeClass('crouch');
+        self.handle.css('bottom', self.positions.inital);
+    }, 500);
+    // stick.removeClass('rise');
 };
 
 Stick.prototype.getCoordinates = function () {

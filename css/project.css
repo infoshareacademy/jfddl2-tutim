@@ -33,10 +33,10 @@ body {
 #stick {
     height: 30vh;
     background-image: url("../images/runner.gif");
-    width: 20vw;
+    width: 15vw;
     position: absolute;
     background-size: cover;
-    bottom: 5%;
+    bottom: 7%;
     left: 7%;
     transition: all 0.5s ease-in;
 
@@ -154,56 +154,56 @@ body {
     animation: crouch 1s linear;
 }
 
-@-webkit-keyframes jump {
-    0%   { bottom: 5%; height: 0vh; }
-    50%   { bottom: 40%; height: 50vh; }
-    100%    { bottom: 5%; height: 80vh; }
-}
-@-moz-keyframes jump {
-    0%   { bottom: 15%; height: 0vh; }
-    50%   { bottom: 20%; height: 50vh; }
-    100%    { bottom: 50%; height: 80vh; }
-}
-@-o-keyframes jump {
-    0%   { bottom: 15%; height: 0vh; }
-    50%   { bottom: 20%; height: 50vh; }
-    100%    { bottom: 50%; height: 80vh; }
-}
-@keyframes jump {
-    0%   { bottom: 0%; height: 30vh; }
-    50%   { bottom: 20%; height: 30vh; }
-    100%    { bottom: 40%; height: 30vh; }
-}
+/*@-webkit-keyframes jump {*/
+    /*0%   { bottom: 5%; height: 0vh; }*/
+    /*50%   { bottom: 40%; height: 50vh; }*/
+    /*100%    { bottom: 5%; height: 80vh; }*/
+/*}*/
+/*@-moz-keyframes jump {*/
+    /*0%   { bottom: 15%; height: 0vh; }*/
+    /*50%   { bottom: 20%; height: 50vh; }*/
+    /*100%    { bottom: 50%; height: 80vh; }*/
+/*}*/
+/*@-o-keyframes jump {*/
+    /*0%   { bottom: 15%; height: 0vh; }*/
+    /*50%   { bottom: 20%; height: 50vh; }*/
+    /*100%    { bottom: 50%; height: 80vh; }*/
+/*}*/
+/*@keyframes jump {*/
+    /*0%   { bottom: 0%; height: 30vh; }*/
+    /*50%   { bottom: 20%; height: 30vh; }*/
+    /*100%    { bottom: 40%; height: 30vh; }*/
+/*}*/
 
-@-webkit-keyframes crouch {
-    0%   { height: 0vh; }
-    50%   { height: 5vh; }
-    100%   { height: 7vh; }
-}
-@-moz-keyframes crouch {
-    0%   { height: 0vh; }
-    50%   { height: 5vh; }
-    100%   { height: 7vh; }
-}
-@-o-keyframes crouch {
-    0%   { height: 0vh; }
-    50%   { height: 5vh; }
-    100%   { height: 7vh; }
-}
-@keyframes crouch {
-    0%   { height: 0vh; }
-    50%   { height: 5vh; }
-    100%   { height: 7vh; }
-}
+/*@-webkit-keyframes crouch {*/
+    /*0%   { height: 0vh; }*/
+    /*50%   { height: 5vh; }*/
+    /*100%   { height: 7vh; }*/
+/*}*/
+/*@-moz-keyframes crouch {*/
+    /*0%   { height: 0vh; }*/
+    /*50%   { height: 5vh; }*/
+    /*100%   { height: 7vh; }*/
+/*}*/
+/*@-o-keyframes crouch {*/
+    /*0%   { height: 0vh; }*/
+    /*50%   { height: 5vh; }*/
+    /*100%   { height: 7vh; }*/
+/*}*/
+/*@keyframes crouch {*/
+    /*0%   { height: 0vh; }*/
+    /*50%   { height: 5vh; }*/
+    /*100%   { height: 7vh; }*/
+/*}*/
 
-@keyframes fall {
-    0%   { bottom: 40%; height: 30vh; }
-    50%   { bottom: 20%; height: 30vh; }
-    100%    { bottom: 0%; height: 30vh; }
-}
+/*@keyframes fall {*/
+    /*0%   { bottom: 40%; height: 30vh; }*/
+    /*50%   { bottom: 20%; height: 30vh; }*/
+    /*100%    { bottom: 0%; height: 30vh; }*/
+/*}*/
 
-@keyframes rise {
-    0%   { bottom: 40%; height: 30vh; }
-    50%   { bottom: 20%; height: 30vh; }
-    100%    { bottom: 0%; height: 30vh; }
-}
+/*@keyframes rise {*/
+    /*0%   { bottom: 40%; height: 30vh; }*/
+    /*50%   { bottom: 20%; height: 30vh; }*/
+    /*100%    { bottom: 0%; height: 30vh; }*/
+/*}*/

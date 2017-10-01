@@ -159,9 +159,9 @@ body {
 }
 
 .wrapper {
-    background: url('images/fitstyle_01.jpg') no-repeat;
     background-size: cover;
     height: 715px;
+    overflow:hidden;
 }
 
 .navbar {
@@ -949,87 +949,347 @@ h1 {
 
 /*Monika Musak - start*/
 
-.photo-woman {
+@media screen and (min-width: 991px) {
 
-    background-image: url("images/zdjecie-pani.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 448px;
+    .btn-responsive {
+
+        background-color: #933EC4;
+        color: white;
+        float: right;
+        border: none;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        margin-top:5%;
+    }
+
+    .btn-responsive:focus {
+        background-color: #933EC4;
+
+    }
+
+    .btn-responsive:active {
+        background-color: #933EC4;
+
+    }
+
+    .btn-responsive:hover {
+
+        background-color: #adc43e;
+    }
+
+    h3 {
+
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 2%;
+        margin-top: 5%;
+        margin-bottom: 3%;
+
+    }
+
+    .meetteam {
+
+        text-align: center;
+        font-weight: bold;
+        padding-top: 2%;
+        font-size: 20px;
+    }
+
+    p.paragraphs2 {
+
+        padding-top: 2%;
+        padding-left: 8%;
+        padding-right: 2%;
+        font-size: 16px;
+    }
+
+    p.paragraphs {
+
+        font-size: 16px;
+        padding-left: 8%;
+        padding-right: 2%;
+        padding-bottom: 5%;
+    }
 }
 
-.photo-woman2 {
+@media screen and (max-width: 991px) {
 
-    background: url("images/zdjecie-pani2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 453px;
+
+
+    .btn-responsive {
+
+        background-color: #933EC4;
+        color: white;
+        float: right;
+        border: none;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        margin-top:5%;
+    }
+
+    .btn-responsive:focus {
+        background-color: #933EC4;
+
+    }
+
+    .btn-responsive:active {
+        background-color: #933EC4;
+
+    }
+
+    .btn-responsive:hover {
+
+        background-color: #adc43e;
+    }
+
+    h3 {
+
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 2%;
+
+    }
+
+    .meetteam {
+
+        text-align: center;
+        font-weight: bold;
+        padding-top: 2%;
+        font-size: 15px;
+    }
+
+    p.paragraphs2 {
+
+        padding-top: 2%;
+        padding-left: 8%;
+        padding-right: 2%;
+        font-size: 13px;
+    }
+
+    p.paragraphs {
+
+        font-size: 13px;
+        padding-left: 8%;
+        padding-right: 2%;
+        padding-bottom: 5%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .btn-responsive {
+
+        background-color: #933EC4;
+        color: white;
+        float: right;
+        border: none;
+        margin-right: 5%;
+        margin-bottom: 5%;
+
+    }
+
+    .btn-responsive:focus {
+        background-color: #933EC4;
+
+    }
+
+    .btn-responsive:active {
+        background-color: #933EC4;
+
+    }
+
+    .btn-responsive:hover {
+
+        background-color: #adc43e;
+    }
+
+    h3 {
+
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 2%;
+
+    }
+
+    .meetteam {
+
+        text-align: center;
+        font-weight: bold;
+        padding-top: 2%;
+        font-size: 14px;
+    }
+
+    p.paragraphs2 {
+
+        padding-top: 2%;
+        padding-left: 8%;
+        padding-right: 2%;
+        font-size: 13px;
+    }
+
+    p.paragraphs {
+
+        font-size: 13px;
+        padding-left: 8%;
+        padding-right: 2%;
+        padding-bottom: 5%;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+
+    .btn-responsive {
+
+        background-color: #933EC4;
+        color: white;
+        float: right;
+        border: none;
+        margin-right: 5%;
+        margin-bottom: 5%;
+
+
+    }
+
+    .btn-responsive:focus {
+        background-color: #933EC4;
+
+    }
+
+    .btn-responsive:active {
+        background-color: #933EC4;
+
+    }
+
+    .btn-responsive:hover {
+
+        background-color: #adc43e;
+    }
+
+    h3 {
+
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 2%;
+
+    }
+
+    .meetteam {
+
+        text-align: center;
+        font-weight: bold;
+        padding-top: 2%;
+        font-size: 12px;
+    }
+
+    p.paragraphs2 {
+
+        padding-top: 2%;
+        padding-left: 8%;
+        padding-right: 2%;
+        font-size: 11px;
+    }
+
+    p.paragraphs {
+
+        font-size: 11px;
+
+    }
+
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .team-photo {
 
-    background: url('images/ekipa.jpg') no-repeat;
     background-size: cover;
-    height: 444px;
+    background-repeat: no-repeat;
 
 }
 
-.banner-img {
+
+
+.banner-photo {
 
     background: url('images/tlo.jpg');
-    text-align: center;
-    color: #adc43e;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10em;
+
 }
 
-.button1234 {
+.banner-photo .creators {
+
+    text-align: center;
+    font-weight: bold;
+    color: #9AD436;
+    font-size: 3em;
+    margin-bottom: 0; !important;
+    margin-top: 2%;
+}
+
+.btn-responsive {
 
     background-color: #933EC4;
-    margin-left: 65%;
-    margin-bottom: 10%;
-    margin-top: 5%;
-    width: 30%;
-    height: 12%;
-    border-radius: 0.8em;
-}
+    color: white;
+    float: right;
+    border: none;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-top:5%;
 
-p {
-
-    text-align: justify;
-    line-height: 150%;
 
 }
 
-h2 {
-
-    text-align: center;
+.btn-responsive:focus {
+    background-color: #933EC4;
 
 }
 
-h3 {
-    font-size: 3em;
+.btn-responsive:active {
+    background-color: #933EC4;
+
 }
 
-.p3 p {
-    padding: 15px;
-    line-height: 20px;
+.btn-responsive:hover {
+
+    background-color: #adc43e;
 }
 
-.p2 p {
-    padding: 15px;
-    line-height: 30px;
+
+
+#myModalLabel {
+
+    text-align: center; !important
+    font-weight: bold; !important
 }
 
-.p1 p {
+.paragraphs2 > span {
+    font-weight: bold;
 
-    padding: 15px;
-    line-height: 20px;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 /*Monika Musak - koniec*/
 
 /*Maria Mioduska - start*/
-#siteEnd .container-fluid {
+#siteEnd .container-fluid{
     background-image: url('images/tlo2_02.jpg');
     background-size: cover;
     font-family: Montserrat;
@@ -1037,27 +1297,28 @@ h3 {
     padding-bottom: 45px;
 }
 
-.grey {
+.grey{
     padding-bottom: 60px;
 }
 
-.black {
+.black{
     background-color: black;
     padding-top: 20px;
     text-align: center;
 }
 
-.logo {
+.logo{
     padding-top: 50px;
+
 
 }
 
-.copyright {
+.copyright{
     position: relative;
     padding-left: 15px;
 }
 
-.copyright p {
+.copyright p{
     text-align: center;
     padding: 10px;
     margin: 0;
@@ -1069,37 +1330,42 @@ h3 {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    color: #D9D9D9;
+    color:  #D9D9D9;
 }
 
-.tutim strong {
+.tutim strong{
     color: white;
     font-weight: bold;
 }
 
-.media {
+.media{
     position: relative;
     margin-top: 0;
 }
 
-.contact {
+
+
+.contact{
     position: relative;
 }
 
-.row black {
+
+
+.row black{
     font-family: 'Montserrat';
     font-size: 0.8em;
 }
 
-.media a {
+.media a{
     text-decoration: none;
     color: white;
 
 }
 
-.contact .mailphone .mail a {
+.contact .mailphone .mail a{
     text-decoration: none;
     color: #D9D9D9;
+
 
 }
 
@@ -1109,42 +1375,41 @@ h3 {
     text-align: center;
 }
 
-.contact .mailphone .phone {
+.contact .mailphone .phone{
     color: #D9D9D9;
     font-family: 'Montserrat'
 }
 
-.contact .mailphone .phone i {
+.contact .mailphone .phone i{
     color: white;
 }
 
-.smallmedia {
+.smallmedia{
     padding: 10px;
 }
 
-.mail {
+.mail{
     padding: 10px;
 }
 
-.phone {
+.phone{
     padding: 10px;
 }
-
-.copyright {
-    color: white;
+.copyright{
+    color:white;
 
 }
 
-.copyright p {
+.copyright p{
     padding-left: 15px;
-    color: #D9D9D9;
+    color:#D9D9D9;
+}
+.copyright p strong{
+    color:white;
 }
 
-.copyright p strong {
-    color: white;
-}
 
-.more h2 {
+.more h2{
     padding-bottom: 50px;
     padding-top: 50px;
 }
