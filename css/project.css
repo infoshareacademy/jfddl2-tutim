@@ -85,7 +85,7 @@ body {
 }
 
 .obstacle.low {
-    bottom: 11%;
+    bottom: 5%;
 }
 
 .obstacle.high {
@@ -119,30 +119,30 @@ body {
 
 .obstacle.car{
     background: url('../images/car.png');
-    bottom:12%;
+    bottom:10%;
     background-repeat: no-repeat;
 }
 
 .obstacle.car1{
     background: url('../images/car (1).png');
-    bottom:12%;
+    bottom:10%;
     background-repeat: no-repeat;
 }
 
 .obstacle.picket{
     background: url('../images/picket.png');
-    bottom:12%;
+    bottom:10%;
     background-repeat: no-repeat;
 }
 
 .obstacle.bucket{
     background: url('../images/bucket.png');
-    bottom:12%;
+    bottom:10%;
     background-repeat: no-repeat;
 }
 .obstacle.bicycle{
     background: url('../images/bicycle.png');
-    bottom:12%;
+    bottom:10%;
     background-repeat: no-repeat;
 }
 

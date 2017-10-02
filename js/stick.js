@@ -5,7 +5,7 @@ function Stick() {
     this.score = 0;
     this.moved = false;
     this.positions = {
-        inital: '5%',
+        inital: '7%',
         crouched: '-10%',
         jumped: '30%'
     };
