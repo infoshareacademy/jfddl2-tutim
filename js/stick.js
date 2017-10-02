@@ -1,5 +1,5 @@
 function Stick() {
-    this.health = 10000;
+    this.health = 10;
     this.handle;
     this.handleHealth;
     this.score = 0;
