@@ -2,7 +2,7 @@
 /* modal sign in menu - jakub */
 
 /* The Modal (background) */
-.modal {
+#myModal.modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -17,7 +17,7 @@
 }
 
 /* Modal Content */
-.modal-content {
+#myModal .modal-content {
     position: relative;
     background-color: rgba(132, 14, 128, 0.23);
     margin: auto;
@@ -69,23 +69,23 @@
     cursor: pointer;
 }
 
-.modal-header {
+#myModal .modal-header {
     padding: 2px 2px;
     background-color: #840e80;
     color: white;
 }
 
-.modal-body {
+#myModal .modal-body {
     padding: 2px 5px;
 }
 
-.modal-footer {
+#myModal .modal-footer {
     padding: 2px 2px;
     background-color: rgba(132, 14, 128, 0.2);
     color: white;
 }
 
-.modal-footer h3 {
+#myModal .modal-footer h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 1em;
     margin-right: 2%;
@@ -95,7 +95,7 @@
     padding: 15px 0 0 0,
 }
 
-.modal-font h2 {
+#myModal .modal-font h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 2.5em;
     text-align: center;
@@ -1285,6 +1285,12 @@ font-weight: bold; !important
     width: 100%;
     height: auto;
 }
+
+#myModal-team .modal-dialog {
+
+    background-color: white;
+}
+
 
 /*Monika Musak - koniec*/
 
