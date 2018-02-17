@@ -221,6 +221,7 @@ ul li:focus{
     text-transform: capitalize;
     font-weight: bold;
     background: transparent;
+
 }
 
 .navbar-default .navbar-nav li a:hover {
